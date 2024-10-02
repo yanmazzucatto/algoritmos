@@ -6,22 +6,16 @@
     int main(void){
 
         printf("Valor do Golpe do Ryu: (numero positivo)\n");
-        scanf("%d", &ryu);
-        printf("Valor do Golpe do ken: (numero negativo)\n");
-        scanf("%d", &ken);
+        for (int round =0; round < 3; round++ ){
 
-        printf("Proximo round!");
-
+            
         printf("Valor do Golpe do Ryu: (numero positivo)\n");
         scanf("%d", &ryu);
         printf("Valor do Golpe do ken: (numero negativo)\n");
         scanf("%d", &ken);
-        
-        printf("Proximo round!");
+        }
 
-        printf("Valor do Golpe do Ryu: (numero positivo)\n");
-        scanf("%d", &ryu);
-        printf("Valor do Golpe do ken: (numero negativo)\n");
-        scanf("%d", &ken);
-        
+
+
+        printf("Proximo round!");
     }
