@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 
-    int ryu, ryu2 ,ken, ken2, RyuHP = 1000, KenHP = 1000;
+    int ryu, ryuscore, ken,kenscore,RyuHP = 1000, KenHP = 1000;
 
     int main(void){
 
@@ -10,6 +10,7 @@
 
         printf("Valor do Golpe do Ryu: (numero positivo)\n");
         scanf("%d", &ryu);
+        if(ryu = ryu )
         RyuHP = RyuHP - ryu;
         printf("Valor do Golpe do ken: (numero negativo)\n");
         scanf("%d", &ken);
