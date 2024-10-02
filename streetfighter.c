@@ -8,7 +8,6 @@
         printf("Valor do Golpe do Ryu: (numero positivo)\n");
         for (int round =0; round < 3; round++ ){
 
-            
         printf("Valor do Golpe do Ryu: (numero positivo)\n");
         scanf("%d", &ryu);
         printf("Valor do Golpe do ken: (numero negativo)\n");
