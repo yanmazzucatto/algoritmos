@@ -10,19 +10,19 @@
 
         printf("Valor do Golpe do Ryu: (numero positivo)\n");
         scanf("%d", &ryu);
-        ryu2 = ryu2+ ryu;
+        RyuHP = RyuHP - ryu;
         printf("Valor do Golpe do ken: (numero negativo)\n");
         scanf("%d", &ken);
-        ken2 = ken + ken2;
+        KenHP = KenHP - ken;
         }
 
-        if (ryu2 > ken2)
+        if (RyuHP > KenHP)
         {
             printf("ryu ganhou");
-        }else if( ken2 > ryu2){
+        }else if( KenHP > RyuHP){
             printf("ken ganhou");
         } else{
-            ("empate");
+            printf("empate");
         }
         
 }
