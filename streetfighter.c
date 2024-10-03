@@ -41,12 +41,18 @@
 int numPerfeito(int combo) {
     int soma = 0; // Começa a soma dos divisores em 0
     // Verifica todos os números de 1 até n/2
+
     for (int i = 1; i <= combo/ 2; i++) {
+        // Aqui você só está verificando se o número é divisível pelo combo
         if (combo % i == 0) { // Se i é um divisor de n
-            soma += i; // Adiciona i à soma
-        } else {
+            // Aqui você só está somando se ele for divisível
+            soma += i; 
+            }
+        }
+        if(soma == combo){
+            return combo * 3;
+        } else{
             return combo;
         }
-    }
-    return soma == combo*3; // Retorna 1 se a soma for igual a n
+
 }
