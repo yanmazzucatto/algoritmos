@@ -12,13 +12,14 @@
 
         printf("Valor do Golpe do Ryu: (numero positivo)\n");
         scanf("%d", &ryu);
+        ryu = numPerfeito(ryu);
         RyuHP = RyuHP - ryu;
-        numPerfeito(ryu);
 
         printf("Valor do Golpe do ken: (numero negativo)\n");
-        scanf("%d", &ken);
-        KenHP = KenHP - ken;
         numPerfeito(ken);
+        scanf("%d", &ken);
+        ken = numPerfeito(ken);
+        KenHP = KenHP - ken;
         }
         //verificação de quem ganhou 
         if (RyuHP > KenHP)
@@ -43,6 +44,8 @@ int numPerfeito(int combo) {
     for (int i = 1; i <= combo/ 2; i++) {
         if (combo % i == 0) { // Se i é um divisor de n
             soma += i; // Adiciona i à soma
+        } else {
+            combo;
         }
     }
     return soma == combo*3; // Retorna 1 se a soma for igual a n
