@@ -2,15 +2,18 @@
 
 
     int numPerfeito(int combo);
-    int ryu, ryuscore, ken,kenscore,RyuHP = 1000, KenHP = 1000;
+    int golpe,ryu, ryuscore, ken,kenscore,RyuHP = 1000, KenHP = 1000;
     int main(void){
 
         //loop para contar o numero de rodadas jogadas
         for (int round =0; round < 3; round++ ){
         
         
-        printf("Valor do Golpe do Ryu: (numero positivo)\n");
-        scanf("%d", &ryu);
+        printf("Digite o Golpe: (positivo = Ryu, Negativo = Ken)\n");
+        scanf("%d", &golpe);
+        if(golpe > 0){
+            ryu = ryu + golpe;
+        }
         ryu = numPerfeito(ryu);
         RyuHP = RyuHP - ryu;
 
