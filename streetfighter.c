@@ -7,7 +7,8 @@
 
         //loop para contar o numero de rodadas jogadas
         for (int round =0; round < 3; round++ ){
-
+        
+        
         printf("Valor do Golpe do Ryu: (numero positivo)\n");
         scanf("%d", &ryu);
         ryu = numPerfeito(ryu);
