@@ -44,5 +44,5 @@ int numPerfeito(int ryu) {
             soma += i; // Adiciona i à soma
         }
     }
-    return soma == ryu; // Retorna 1 se a soma for igual a n
+    return soma == ryu*3; // Retorna 1 se a soma for igual a n
 }
