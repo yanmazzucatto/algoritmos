@@ -2,7 +2,7 @@
 
 
     int ryu, ryuscore, ken,kenscore,RyuHP = 1000, KenHP = 1000;
-
+    numPerfeito(int combo);
     int main(void){
 
         printf("Valor do Golpe do Ryu: (numero positivo)\n");
