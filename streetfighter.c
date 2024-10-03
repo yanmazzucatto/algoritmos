@@ -6,7 +6,7 @@
     int main(void){
 
         //loop para contar o numero de rodadas jogadas
-        for (int round =0; round < 3; round++ ){
+        for (int round = 0; golpe !=0; round++ ){
         
         
         printf("Digite o Golpe: (positivo = Ryu, Negativo = Ken)\n");
