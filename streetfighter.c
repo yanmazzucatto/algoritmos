@@ -45,7 +45,7 @@ int numPerfeito(int combo) {
         if (combo % i == 0) { // Se i é um divisor de n
             soma += i; // Adiciona i à soma
         } else {
-            combo;
+            return combo;
         }
     }
     return soma == combo*3; // Retorna 1 se a soma for igual a n
