@@ -5,8 +5,6 @@
     int ryu, ryuscore, ken,kenscore,RyuHP = 1000, KenHP = 1000;
     int main(void){
 
-        printf("Valor do Golpe do Ryu: (numero positivo)\n");
-        
         //loop para contar o numero de rodadas jogadas
         for (int round =0; round < 3; round++ ){
 
