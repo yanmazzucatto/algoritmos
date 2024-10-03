@@ -43,11 +43,13 @@ int numPerfeito(int combo) {
     int soma = 0; // Começa a soma dos divisores em 0
     // Verifica todos os números de 1 até n/2
 
-    for (int i = 1; i <= combo/ 2; i++) {
+    for (int i = 1; i == combo; i++) {
         // Aqui você só está verificando se o número é divisível pelo combo
         if (combo % i == 0) { // Se i é um divisor de n
             // Aqui você só está somando se ele for divisível
             soma += i; 
+            printf("%i", i);
+            printf("%i", soma);
             }
         }
         if(soma == combo){
