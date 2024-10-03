@@ -25,11 +25,11 @@
     }
             //verificação de quem ganhou 
             if (ryu > ken){
-                printf("ryu ganhou");
+                printf("\nryu ganhou\n");
             }else if( ken > ryu){
-                printf("ken ganhou");
+                printf("\nken ganhou\n");
             } else{
-                printf("empate");
+                printf("\nempate\n");
             }
             
 }
@@ -52,6 +52,7 @@ int numPerfeito(int combo) {
         }
         if(soma == combo){
             return combo * 3;
+            printf("\nESSE GOLPE FOI UM COMBO!!!! \n");
         } else{
             return combo;
         }
