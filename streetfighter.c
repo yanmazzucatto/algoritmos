@@ -2,12 +2,11 @@
 
 
     int numPerfeito(int combo);
-    int golpe = 1,ryu, ryuscore, ken,kenscore;
+    int golpe = 1,ryu, ken;
     int main(void){
 
         //loop para contar o numero de rodadas jogadas
-        for (int round = 0; golpe !=0; round++ ){
-        
+    while (golpe != 0 ){
         
         printf("Digite o Golpe: (positivo = Ryu, Negativo = Ken)\n");
         scanf("%d", &golpe);
@@ -18,21 +17,16 @@
             numPerfeito(ken);
             ken = ken + golpe;
         }
-
-        printf("Valor do Golpe do ken: (numero negativo)\n");
-        numPerfeito(ken);
-        scanf("%d", &ken);
-        ken = numPerfeito(ken);
-        }
-        //verificação de quem ganhou 
-        if (ryu > ken){
-            printf("ryu ganhou");
-        }else if( ken > ryu){
-            printf("ken ganhou");
-        } else{
-            printf("empate");
-        }
-        
+    }
+            //verificação de quem ganhou 
+            if (ryu > ken){
+                printf("ryu ganhou");
+            }else if( ken > ryu){
+                printf("ken ganhou");
+            } else{
+                printf("empate");
+            }
+            
 }
 
 //(ryu *(ryu+1)/2)
