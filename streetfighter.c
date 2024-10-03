@@ -12,13 +12,12 @@
 
         printf("Valor do Golpe do Ryu: (numero positivo)\n");
         scanf("%d", &ryu);
-        if(ryu = ryu )
-        //tentativa de fazer for para numero perfeito
-
         RyuHP = RyuHP - ryu;
+
         printf("Valor do Golpe do ken: (numero negativo)\n");
         scanf("%d", &ken);
         KenHP = KenHP - ken;
+        
         }
         //verificação de quem ganhou 
         if (RyuHP > KenHP)
@@ -32,4 +31,18 @@
         
 }
 
-(ryu *(ryu+1)/2)
+//(ryu *(ryu+1)/2)
+
+
+
+// Função para verificar se um número é perfeito
+int numPerfeito(int ryu) {
+    int soma = 0; // Começa a soma dos divisores em 0
+    // Verifica todos os números de 1 até n/2
+    for (int i = 1; i <= ryu/ 2; i++) {
+        if (ryu % i == 0) { // Se i é um divisor de n
+            soma += i; // Adiciona i à soma
+        }
+    }
+    return soma == ryu; // Retorna 1 se a soma for igual a n
+}
