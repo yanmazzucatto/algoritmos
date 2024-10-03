@@ -52,7 +52,7 @@ int numPerfeito(int combo) {
         }
         if(soma == combo){
             return combo * 3;
-            printf("\nESSE GOLPE FOI UM COMBO!!!! \n");
+            printf("\nES SE GOLPE FOI UM COMBO!!!! \n");
         } else{
             return combo;
         }
