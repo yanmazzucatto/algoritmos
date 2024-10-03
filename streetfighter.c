@@ -2,7 +2,7 @@
 
 
     int numPerfeito(int combo);
-    int golpe = 1,ryu, ken;
+    int golpe = 1, ryu, ken;
     int main(void){
 
         //loop para contar o numero de rodadas jogadas
