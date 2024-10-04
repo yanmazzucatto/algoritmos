@@ -51,13 +51,13 @@ int numPerfeito(int combo) {
             soma += i; 
             printf("%i", i);
             printf("%i", soma);
-            }
         }
-        if(soma == combo){
-            return combo * 3;
-            printf("\nES SE GOLPE FOI UM COMBO!!!! \n");
-        } else{
-            return combo;
-        }
+    }
+    if(soma == combo){
+        return combo * 3;
+        printf("\nES SE GOLPE FOI UM COMBO!!!! \n");
+    } else{
+        return combo;
+    }
 
 }
