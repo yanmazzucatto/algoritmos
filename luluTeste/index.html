@@ -29,6 +29,9 @@
             color: white;
             background-color: black;
         }
+        #colorMarquee{
+                color: white;
+            }
 
         @keyframes colors-change{
             0%{
@@ -42,6 +45,7 @@
             }100%{
                 background-color: blueviolet;
             }
+            
         }
     </style>
     <h2>Lulu</h2>
@@ -55,7 +59,9 @@
             <p id="cor1"> rosa</p>
             <p id="cor2"> verde</p>
             <p id="cor3"> amarelo</p>
-            <marquee scrollamount="123" width="100%" color="white" direction="right"><h1>iawdawdjaoidjoiawdjwod</h1></marquee>
+            <marquee behavior="scroll" scrollamount="50" margin-left="600px" width="1900px" direction="right">
+                <h1 id="colorMarquee">LULU GAY!!!!</h1>
+            </marquee>
         </div>
     </body>
 </html>
