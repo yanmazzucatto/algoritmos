@@ -8,6 +8,9 @@
 <body>
     <header><h1>Yan sabe que,</h1></header>
     <style>
+        body{
+            animation: colors-change 10s linear;
+        }
         .largura-do-lulu{
             border: rgb(255, 163, 198) 2px solid;
             width: 600px;
@@ -25,6 +28,20 @@
         #cor3{
             color: white;
             background-color: black;
+        }
+
+        @keyframes colors-change{
+            0%{
+                background-color: blueviolet;
+            } 30%{
+                background-color: blue;
+            } 70%{
+                background-color: white;
+            }90%{
+                background-color: red;
+            }100%{
+                background-color: blueviolet;
+            }
         }
     </style>
     <h2>Lulu</h2>
