@@ -33,8 +33,10 @@ int main(void){
             //verificação de quem ganhou 
             if (ryu > ken){
                 printf("\nryu ganhou\n");
+                roundWin[0] ++;
             }else if( ken > ryu){
                 printf("\nken ganhou\n");
+                roundWin[1] ++;
             } else{
                 printf("\nempate\n");
             }
