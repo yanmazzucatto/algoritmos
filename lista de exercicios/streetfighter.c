@@ -3,7 +3,7 @@
 
 int numPerfeito(int combo);
 int numTriangular(int combo);
-int golpe = 1, golpeAnterior, ryu, ken;
+int golpe = 1, golpeAnterior, ryu, ken, roundWin[2];
 
 int main(void){
 
@@ -28,19 +28,23 @@ int main(void){
                 }
                 ken += golpe;
             }
+
+            
+            //verificação de quem ganhou 
+            if (ryu > ken){
+                printf("\nryu ganhou\n");
+            }else if( ken > ryu){
+                printf("\nken ganhou\n");
+            } else{
+                printf("\nempate\n");
+            }
         
         }
 
+
+
     }
 
-    //verificação de quem ganhou 
-    if (ryu > ken){
-        printf("\nryu ganhou\n");
-    }else if( ken > ryu){
-        printf("\nken ganhou\n");
-    } else{
-        printf("\nempate\n");
-    }
             
 }
 
