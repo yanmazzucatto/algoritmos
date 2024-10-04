@@ -11,6 +11,7 @@ int main(void){
     while (golpe != 0 ){
         printf("Digite o Golpe: (positivo = Ryu, Negativo = Ken)\n");
         scanf("%d", &golpe);
+
         while (golpeAnterior < 0 && golpe > 0) {
 
             if(golpe > 0){
@@ -42,7 +43,8 @@ int main(void){
             }
         
         }
-
+        ryu = 0;
+        ken = 0;
 
 
     }
