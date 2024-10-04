@@ -3,16 +3,16 @@
 
 int numPerfeito(int combo);
 int numTriangular(int combo);
-int golpe = 1, golpeAnterior, ryu, ken, roundWin[2];
+int golpe = 1, golpeAnterior = 1, ryu, ken, roundWin[2];
 
 int main(void){
 
     // Looop para o jogo
     while (golpe != 0 ){
-        printf("Digite o Golpe: (positivo = Ryu, Negativo = Ken)\n");
-        scanf("%d", &golpe);
-
         while (golpeAnterior < 0 && golpe > 0) {
+            printf("Digite o Golpe: (positivo = Ryu, Negativo = Ken)\n");
+            scanf("%d", &golpe);
+            
             if(golpe > 0){
                 if(golpe == numPerfeito(golpe)){
                     golpe = numPerfeito(golpe);
@@ -27,7 +27,8 @@ int main(void){
                     golpe = numTriangular(golpe);
                 }
                 ken += golpe;
-            }        
+            }
+            golpeAnterior = golpe;
         }
         //verificação de quem ganhou 
         if (ryu > ken){
