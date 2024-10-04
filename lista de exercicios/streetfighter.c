@@ -12,10 +12,18 @@ int main(void){
         printf("Digite o Golpe: (positivo = Ryu, Negativo = Ken)\n");
         scanf("%d", &golpe);
         if(golpe > 0){
-            golpe = numPerfeito(golpe);
+            if(golpe == numPerfeito(golpe)){
+                golpe = numPerfeito(golpe);
+            } else if(golpe == numTriangular(golpe)){
+                golpe = numTriangular(golpe);
+            }
             ryu += golpe;
         } else if( golpe < 0 ){
-            golpe = numPerfeito(golpe);
+            if(golpe == numPerfeito(golpe)){
+                golpe = numPerfeito(golpe);
+            } else if(golpe == numTriangular(golpe)){
+                golpe = numTriangular(golpe);
+            }
             ken += golpe;
         }
         // Loop para os round
