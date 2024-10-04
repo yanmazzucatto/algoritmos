@@ -66,16 +66,9 @@ int numTriangular(int combo) {
 
     for (int i = 1; i < combo; i++) {
         // Aqui você só está verificando se o número é divisível pelo combo
-        if (combo % i == 0) { // Se i é um divisor de n
+        if (soma == combo ) { // Se i é um divisor de n
             // Aqui você só está somando se ele for divisível
-            soma += i;
-        }
-    }
-    if(soma == combo){
-        return combo * 3;
-        printf("\nES SE GOLPE FOI UM COMBO!!!! \n");
-    } else{
-        return combo;
-    }
+            return combo * 2;
+        } 
 
 }
