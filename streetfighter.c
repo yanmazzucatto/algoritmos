@@ -1,20 +1,20 @@
 #include <stdio.h>
 
 
-    int numPerfeito(int combo);
-    int golpe = 1, golpeAnterior, ryu, ken;
-    int main(void){
+int numPerfeito(int combo);
+int golpe = 1, golpeAnterior, ryu, ken;
+
+int main(void){
 
     // Looop para o jogo
     while (golpe != 0 ){
         printf("Digite o Golpe: (positivo = Ryu, Negativo = Ken)\n");
         scanf("%d", &golpe);
-        
-        if(golpe){
-            numPerfeito(ryu);
+        if(golpe > 0){
+            numPerfeito(golpe);
             ryu = ryu + golpe;
         } else if( golpe < 0 ){
-            numPerfeito(ken);
+            numPerfeito(golpe);
             ken = ken + golpe;
         }
         // Loop para os round
@@ -23,14 +23,15 @@
         }
 
     }
-            //verificação de quem ganhou 
-            if (ryu > ken){
-                printf("\nryu ganhou\n");
-            }else if( ken > ryu){
-                printf("\nken ganhou\n");
-            } else{
-                printf("\nempate\n");
-            }
+
+    //verificação de quem ganhou 
+    if (ryu > ken){
+        printf("\nryu ganhou\n");
+    }else if( ken > ryu){
+        printf("\nken ganhou\n");
+    } else{
+        printf("\nempate\n");
+    }
             
 }
 
@@ -41,7 +42,7 @@
 // Função para verificar se um número é perfeito
 int numPerfeito(int combo) {
     int soma = 0; // Começa a soma dos divisores em 0
-    // Verifica todos os números de 1 até n/2
+    // Verifica todos os números de 1 até n
 
     for (int i = 1; i < combo; i++) {
         printf("ENtrou no for\n");
