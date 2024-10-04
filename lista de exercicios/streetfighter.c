@@ -2,6 +2,7 @@
 
 
 int numPerfeito(int combo);
+int numTriangular(int combo);
 int golpe = 1, golpeAnterior, ryu, ken;
 
 int main(void){
@@ -70,5 +71,6 @@ int numTriangular(int combo) {
             // Aqui você só está somando se ele for divisível
             return combo * 2;
         } 
-
+    }
+    return combo; 
 }
