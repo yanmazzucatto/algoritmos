@@ -9,9 +9,9 @@ int main(void){
 
     // Looop para o jogo
     while (golpe != 0 ){
-        while (golpeAnterior < 0 && golpe > 0) {
             printf("Digite o Golpe: (positivo = Ryu, Negativo = Ken)\n");
             scanf("%d", &golpe);
+        while (golpeAnterior < 0 && golpe > 0) {
             
             if(golpe > 0){
                 if(golpe == numPerfeito(golpe)){
