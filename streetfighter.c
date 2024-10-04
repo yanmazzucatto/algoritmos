@@ -11,11 +11,11 @@ int main(void){
         printf("Digite o Golpe: (positivo = Ryu, Negativo = Ken)\n");
         scanf("%d", &golpe);
         if(golpe > 0){
-            numPerfeito(golpe);
-            ryu = ryu + golpe;
+            golpe = numPerfeito(golpe);
+            ryu += golpe;
         } else if( golpe < 0 ){
-            numPerfeito(golpe);
-            ken = ken + golpe;
+            golpe = numPerfeito(golpe);
+            ken += golpe;
         }
         // Loop para os round
         while (golpeAnterior < 0 && golpe > 0) {
@@ -45,13 +45,10 @@ int numPerfeito(int combo) {
     // Verifica todos os números de 1 até n
 
     for (int i = 1; i < combo; i++) {
-        printf("ENtrou no for\n");
         // Aqui você só está verificando se o número é divisível pelo combo
         if (combo % i == 0) { // Se i é um divisor de n
             // Aqui você só está somando se ele for divisível
-            soma += i; 
-            printf("%i", i);
-            printf("%i", soma);
+            soma += i;
         }
     }
     if(soma == combo){
