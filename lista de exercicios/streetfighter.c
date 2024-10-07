@@ -25,14 +25,27 @@ int golpe = 1, golpeAnterior = 1, ryu = 0, ken = 0, roundWin[2] = {0, 0};
                     golpe = numTriangular(golpe);
                 }
                 ryu += golpe;
-            }else {
+            }else if (golpe < 0) {
+                int comboGolpe = -golpe; // Converte para positivo
+                if (numPerfeito(comboGolpe) > comboGolpe) {
+                    golpe = -numPerfeito(comboGolpe); // Mantém o sinal negativo
+                    printf("Ken fez um combo!\n");
+                } else if (numTriangular(comboGolpe) > comboGolpe) {
+                    golpe = -numTriangular(comboGolpe); // Mantém o sinal negativo
+                    printf("Ken fez um combo!\n");
+                }
+                ken += -golpe; // Adiciona o valor positivo ao total de Ken
+            }
+
+            
+            /*{
                 if(golpe == numPerfeito(golpe)){
                     golpe = numPerfeito(golpe);
                 } else if(golpe == numTriangular(golpe)){
                     golpe = numTriangular(golpe);
                 }
                 ken += -golpe;
-            }
+            }*/
         
         }
         //verificação de quem ganhou 
