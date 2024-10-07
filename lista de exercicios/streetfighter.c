@@ -52,7 +52,6 @@ int golpe = 1, golpeAnterior = 1, ryu = 0, ken = 0, roundWin[2] = {0, 0};
         
 }
 
-//(ryu *(ryu+1)/2)
 
 
 
@@ -62,7 +61,7 @@ int numPerfeito(int combo) {
     // Verifica todos os números de 1 até n
 
     for (int i = 1; i < combo; i++) {
-        // Aqui você só está verificando se o número é divisível pelo combo
+        // Verificando os divisores do combo
         if (combo % i == 0) { // Se i é um divisor de n
             // Aqui você só está somando se ele for divisível
             soma += i;
@@ -84,7 +83,6 @@ int numTriangular(int combo) {
     for (int i = 1; i < combo; i++) {
         // Aqui você só está verificando se o número é divisível pelo combo
         if (soma == combo ) { // Se i é um divisor de n
-            // Aqui você só está somando se ele for divisível
             return combo * 2;
         } 
     }
