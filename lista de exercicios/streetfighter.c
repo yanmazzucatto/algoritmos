@@ -3,7 +3,7 @@
 
 int numPerfeito(int combo);
 int numTriangular(int combo);
-int golpe = 0, golpeAnterior = 1, ryu, ken, roundWin[2];
+int golpe = 1, golpeAnterior = 1, ryu, ken, roundWin[2];
 
 int main(void){
 
