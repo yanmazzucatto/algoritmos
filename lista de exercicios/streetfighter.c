@@ -38,10 +38,10 @@ int golpe = 1, golpeAnterior = 1, ryu = 0, ken = 0, roundWin[2] = {0, 0};
         //verificação de quem ganhou 
         if (ryu > ken){
             printf("\nryu ganhou\n");
-            roundWin[0] ++;
+            roundWin[0]++;
         }else if( ken > ryu){
             printf("\nken ganhou\n");
-            roundWin[1] ++;
+            roundWin[1]++;
         } else{
             printf("\nempate\n");
         }
