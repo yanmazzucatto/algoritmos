@@ -7,7 +7,7 @@ int golpe = 1, golpeAnterior = 1, ryu, ken, roundWin[2];
 
 int main(void){
 
-    // Looop para o jogo
+    // Loop para o jogo
     while (golpe != 0 ){
         while (golpeAnterior < 0 && golpe > 0) {
             printf("Digite o Golpe: (positivo = Ryu, Negativo = Ken)\n");
