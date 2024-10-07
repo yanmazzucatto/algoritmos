@@ -16,7 +16,7 @@ int golpe = 1, golpeAnterior = 0, ryu = 0, ken = 0, roundWin[2] = {0, 0};
         while (golpeAnterior != 0) {
             printf("Digite o Golpe: (positivo = Ryu, Negativo = Ken)\n");
             scanf("%d", &golpe);
-            
+
             if (golpe == 0) break;
 
             if(golpe > 0){
@@ -75,12 +75,12 @@ int numPerfeito(int combo) {
     if(soma == combo){
         return combo * 3;
         printf("\nESSE GOLPE FOI UM COMBO!!!! \n");
-    } else{
+    } else {
         return combo;
     }
 
 }
-// Função para verificar se um número é perfeito
+// Função para verificar se um número é triangular
 int numTriangular(int combo) {
     int soma = 0; // Começa a soma dos divisores em 0
     // Verifica todos os números de 1 até n
