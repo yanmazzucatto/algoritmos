@@ -31,9 +31,9 @@ int golpe = 1, golpeAnterior = 1, ryu = 0, ken = 0, roundWin[2] = {0, 0};
                 } else if(golpe == numTriangular(golpe)){
                     golpe = numTriangular(golpe);
                 }
-                ken += golpe;
+                ken += -golpe;
             }
-            golpeAnterior = golpe;
+        
         }
         //verificação de quem ganhou 
         if (ryu > ken){
