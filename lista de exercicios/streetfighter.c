@@ -19,7 +19,7 @@ int golpe = 1, golpeAnterior = 1, ryu = 0, ken = 0, roundWin[2] = {0, 0};
             if (golpe == 0) break;
 
             if(golpe > 0){
-                if(numPerfeito(golpe) > golpe){
+                if(golpe == numPerfeito(golpe)){
                     golpe = numPerfeito(golpe);
                 } else if(numTriangular(golpe) > golpe){
                     golpe = numTriangular(golpe);
