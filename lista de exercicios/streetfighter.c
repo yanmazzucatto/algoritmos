@@ -34,7 +34,6 @@ int golpe = 1, golpeAnterior = 1, ryu = 0, ken = 0, roundWin[2] = {0, 0};
                 }
                 ken += -golpe; // Adiciona o valor positivo ao total de Ken
             }
-
             
             /*{
                 if(golpe == numPerfeito(golpe)){
