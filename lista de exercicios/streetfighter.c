@@ -20,7 +20,7 @@ int main(void){
                     golpe = numTriangular(golpe);
                 }
                 ryu += golpe;
-            } else if( golpe < 0 ){
+            }else {
                 if(golpe == numPerfeito(golpe)){
                     golpe = numPerfeito(golpe);
                 } else if(golpe == numTriangular(golpe)){
