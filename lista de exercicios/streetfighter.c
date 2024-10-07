@@ -83,6 +83,7 @@ int numPerfeito(int combo) {
         
     } else {
         return combo;
+        
     }
 
 }
