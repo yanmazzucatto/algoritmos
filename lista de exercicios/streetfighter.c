@@ -46,9 +46,10 @@ int golpe = 1, golpeAnterior = 0, ryu = 0, ken = 0, roundWin[2] = {0, 0};
             printf("\nempate\n");
         }
 
-    }
             ryu = 0;
-            ken = 0;   
+            ken = 0;
+    }
+        
 }
 
 //(ryu *(ryu+1)/2)
