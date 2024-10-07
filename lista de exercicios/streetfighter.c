@@ -68,8 +68,9 @@ int numPerfeito(int combo) {
         }
     }
     if(soma == combo){
-        return combo * 3;
         printf("\nESSE GOLPE FOI UM COMBO!!!! \n");
+        return combo * 3;
+        
     } else {
         return combo;
     }
