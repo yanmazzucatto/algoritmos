@@ -7,9 +7,9 @@
       "request": "launch",
       "args": [],
       "stopAtEntry": false,
-      "externalConsole": true,
-      "cwd": "c:/Users/Microsoft/Documents/Fatec/algoritimos",
-      "program": "c:/Users/Microsoft/Documents/Fatec/algoritimos/build/Debug/outDebug",
+      "externalConsole": false,
+      "cwd": "/workspaces/algoritimos/lista de exercicios",
+      "program": "/workspaces/algoritimos/lista de exercicios/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
