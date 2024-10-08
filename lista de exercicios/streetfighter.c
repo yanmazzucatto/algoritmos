@@ -81,7 +81,7 @@ int numPerfeito(int combo) {
         return combo * 3;
         
     } else {
-        return combo;
+        int numTringular(int combo);
         
     }
 
