@@ -18,20 +18,13 @@ int golpe = 1, golpeAnterior = 1, ryu = 0, ken = 0, roundWin[2] = {0, 0};
             if (golpe == 0) break;
 
             if(golpe > 0){
-                if(golpe == numPerfeito(golpe)){
-                    golpe = numPerfeito(golpe);
-                } else if(numTriangular(golpe) > golpe){
-                    golpe = numTriangular(golpe);
-                }
+                golpe == numPerfeito(golpe);
                 ryu += golpe;
             }else if (golpe < 0) {
                 int comboGolpe = -golpe; // Converte para positivo
                 if (numPerfeito(comboGolpe) > comboGolpe) {
                     golpe = -numPerfeito(comboGolpe); // Mantém o sinal negativo
-                } else if (numTriangular(comboGolpe) > comboGolpe) {
-                    golpe = -numTriangular(comboGolpe); // Mantém o sinal negativo
-                }
-                ken += -golpe; // Adiciona o valor positivo ao total de Ken
+                    ken += -golpe; // Adiciona o valor positivo ao total de Ken
             }
             
             /*{
