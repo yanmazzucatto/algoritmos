@@ -26,16 +26,6 @@ int golpe = 1, golpeAnterior = 1, ryu = 0, ken = 0, roundWin[2] = {0, 0};
                     golpe = -numPerfeito(comboGolpe); // Mantém o sinal negativo
                     ken += -golpe; // Adiciona o valor positivo ao total de Ken
             }
-            
-            /*{
-                if(golpe == numPerfeito(golpe)){
-                    golpe = numPerfeito(golpe);
-                } else if(golpe == numTriangular(golpe)){
-                    golpe = numTriangular(golpe);
-                }
-                ken += -golpe;
-            }*/
-        
         }
         //verificação de quem ganhou 
         if (ryu > ken){
