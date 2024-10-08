@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Clone</title>
+    
+</head>
+<body>
+    <style>/* styles.css */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        
+        header {
+            display: flex;
+            align-items: center;
+            background-color: #f9f9f9;
+            padding: 10px;
+        }
+        
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            margin-right: 20px;
+        }
+        
+        .search-bar {
+            flex: 1;
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 2px;
+        }
+        
+        .search-button {
+            padding: 6px 10px;
+            background-color: #cc0000;
+            color: white;
+            border: none;
+            border-radius: 2px;
+            cursor: pointer;
+        }
+        
+        .video-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 10px;
+            padding: 10px;
+        }
+        
+        .video {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            overflow: hidden;
+        }
+        
+        .video img {
+            width: 100%;
+            height: auto;
+        }
+        
+        .video h3 {
+            padding: 5px;
+            font-size: 16px;
+            margin: 0;
+        }
+        </style>
+    <header>
+        <div class="logo">YouTube</div>
+        <input type="text" class="search-bar" placeholder="Pesquisar">
+        <button class="search-button">Pesquisar</button>
+    </header>
+    <main>
+        <div class="video-grid">
+            <div class="video">
+                <img src="https://via.placeholder.com/200x120" alt="Miniatura do vídeo">
+                <h3>Título do Vídeo</h3>
+            </div>
+            <div class="video">
+                <img src="https://via.placeholder.com/200x120" alt="Miniatura do vídeo">
+                <h3>Título do Vídeo</h3>
+            </div>
+            <div class="video">
+                <img src="https://via.placeholder.com/200x120" alt="Miniatura do vídeo">
+                <h3>Título do Vídeo</h3>
+            </div>
+            <!-- Adicione mais vídeos conforme necessário -->
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
