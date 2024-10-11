@@ -11,12 +11,12 @@
 }
 #hero-left{
     border: 2px rgb(145, 145, 145) solid;
-    width: 45%;
+    width: 50%;
     height:100vh;
     padding: 20px;
     flex-direction: column;
     align-content: center;
-    z
+    z-index: 2;
 }
 #hero-right{
     border: 2px rgb(145, 145, 145) solid;
@@ -24,4 +24,5 @@
     height:100vh;
     padding: 20px;
     flex-direction: column;
+    z-index: 2;
 }
