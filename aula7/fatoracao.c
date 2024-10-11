@@ -1,15 +1,16 @@
 #include <stdio.h>
 
 int main(){
-    int num, aux, somatoria;
+    int num, somatoria;
 
     printf("Digite um número Inteiro: (nao muito grande em!)\n");
     scanf("%d" , &num);
 
-    aux = num;
-    
-    for ( int i = 0; i < aux ; i++ ){
-        
+    somatoria = num;
+    while (num != 1 ){
+        somatoria *= num - 1;
+        num--;
     }
     
+    printf("O numero fatorial aqui: %d \n" , somatoria);
 }
