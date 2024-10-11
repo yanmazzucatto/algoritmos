@@ -2,7 +2,12 @@
     justify-content: space-around;
     width: 100vw;
     display: flex;
+    background: url('https://bkpsitecpsnew.blob.core.windows.net/uploadsitecps/sites/1/2020/10/50603700_1022920661249010_7753951879649820672_n.jpg');
     padding: 0; 
+    filter: blur(2px);
+    z-index: -1;
+    background-repeat:repeat;
+    object-fit: cover;
 }
 #hero-left{
     border: 2px rgb(145, 145, 145) solid;
@@ -20,9 +25,4 @@
     padding: 20px;
     flex-direction: column;
     z-index: 2;
-    background: url('https://bkpsitecpsnew.blob.core.windows.net/uploadsitecps/sites/1/2020/10/50603700_1022920661249010_7753951879649820672_n.jpg');
-    filter: blur(3px);
-    z-index:2;
-    object-fit: cover;
-    background-repeat:repeat;
 }
