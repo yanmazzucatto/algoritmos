@@ -9,7 +9,9 @@ int main(){
 
     while (golpe != 0 )
     {
-        
+        if( golpe > 0){
+            ryu = ryu + golpe;
+        }
     }
     
 
