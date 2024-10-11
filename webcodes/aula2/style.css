@@ -1,13 +1,24 @@
 .hero {
+    position: relative; 
     justify-content: space-around;
     width: 100vw;
-    height: 100vh; 
+    height: 100vh;
     display: flex;
-    background: url('https://bkpsitecpsnew.blob.core.windows.net/uploadsitecps/sites/1/2020/10/50603700_1022920661249010_7753951879649820672_n.jpg') no-repeat center center; /* Centraliza a imagem */
-    background-size: cover;
     padding: 0; 
-    filter: blur(2px);
-    z-index: -1;
+    z-index: 1; 
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('https://bkpsitecpsnew.blob.core.windows.net/uploadsitecps/sites/1/2020/10/50603700_1022920661249010_7753951879649820672_n.jpg') no-repeat center center;
+    background-size: cover; 
+    filter: blur(2px); 
+    z-index: -1; 
 }
 
 #hero-left, #hero-right {
@@ -17,5 +28,5 @@
     padding: 20px;
     flex-direction: column;
     display: flex; 
-    z-index: 2;
+    z-index: 2; 
 }
