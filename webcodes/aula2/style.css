@@ -1,13 +1,17 @@
 .hero{
     justify-content: space-around;
+    width: 1200px;
+    display: flex;
 }
 #hero-left{
     border: 2px rgb(145, 145, 145) solid;
     width: 45%;
     height:100vh;
+    padding: 20px;
 }
 #hero-right{
     border: 2px rgb(145, 145, 145) solid;
-    width: 45%;
+    width: 50%;
     height:100vh;
+    padding: 20px;
 }
