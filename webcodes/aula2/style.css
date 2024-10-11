@@ -4,6 +4,10 @@
     display: flex;
     background: url('https://bkpsitecpsnew.blob.core.windows.net/uploadsitecps/sites/1/2020/10/50603700_1022920661249010_7753951879649820672_n.jpg');
     filter: blur(3px);
+    z-index:-1;
+    object-fit: cover;
+    repeat: no-repeat;
+    
 }
 #hero-left{
     border: 2px rgb(145, 145, 145) solid;
