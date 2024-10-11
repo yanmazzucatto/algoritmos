@@ -8,10 +8,12 @@
     width: 45%;
     height:100vh;
     padding: 20px;
+    flex-direction: column;
 }
 #hero-right{
     border: 2px rgb(145, 145, 145) solid;
     width: 50%;
     height:100vh;
     padding: 20px;
+    flex-direction: column;
 }
