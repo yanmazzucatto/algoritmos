@@ -2,7 +2,7 @@
 
 int main(){
 
-    int ryu, ken, round, golpe = 1;
+    int ryu, ken, golpeAnterior, golpe = 1;
 
     printf("Digite o valor dos golpes: \n");
     scanf("%d", &golpe);
@@ -14,6 +14,6 @@ int main(){
         }else {
             ken = ken +golpe; 
         }
-        
+
     }
 }
