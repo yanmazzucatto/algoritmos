@@ -11,8 +11,9 @@ int main(){
     {
         if( golpe > 0){
             ryu = ryu + golpe;
+        }else {
+            ken = ken +golpe; 
         }
+        
     }
-    
-
 }
