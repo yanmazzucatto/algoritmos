@@ -1,6 +1,6 @@
 .hero{
     justify-content: space-around;
-    width: 1200px;
+    width: 100vw;
     display: flex;
 }
 #hero-left{
