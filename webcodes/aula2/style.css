@@ -1,6 +1,13 @@
 .hero{
-    border: 2px black solid;
+    justify-content: space-around;
 }
-#hero-div{
-    border: 2px black solid;
+#hero-left{
+    border: 2px rgb(145, 145, 145) solid;
+    width: 45%;
+    height:100vh;
+}
+#hero-right{
+    border: 2px rgb(145, 145, 145) solid;
+    width: 45%;
+    height:100vh;
 }
