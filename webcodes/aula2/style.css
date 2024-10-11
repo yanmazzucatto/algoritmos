@@ -6,6 +6,8 @@
     display: flex;
     padding: 0; 
     z-index: 1; 
+    backdrop-filter: rgb(70, 70, 70);
+    backdrop-filter: opacity(60%) ;
 }
 
 .hero::before {
@@ -19,8 +21,6 @@
     background-size: cover; 
     filter: blur(2px); 
     z-index: -1; 
-    backdrop-filter: rgb(70, 70, 70);
-    backdrop-filter: opacity(60%) ;
 }
 
 #hero-left, #hero-right {
