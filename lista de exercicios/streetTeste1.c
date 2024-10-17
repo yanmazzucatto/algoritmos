@@ -5,7 +5,7 @@
 //o golpe acumula os pontos jogados e faz a verificação através de um IF para ver qual dos personagens receberá o valor inserido.
 // O golpe anterior serve para fazer a verificação de quando houve uma troca de round, pois ele verifica se o usuário digitou um numero positivo após ter jogado um número negativo;
 //as funções citadas fazem a verificação do golpe para que ele receba a multiplicação do combo se necessário;
-// a saida exibe quem venceu através de 
+// a saida exibe quem venceu através dos pontos acumulados em cada personagem;
 
 int numPerfeito(int combo);
 int numTriangular(int combo);
