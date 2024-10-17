@@ -27,6 +27,7 @@ int golpe = 1, golpeAnterior = 1, ryu = 0, ken = 0, roundWin;
                     ken += -golpe; // Adiciona o valor positivo ao total de Ken
             }
         }
+    }
         //verificação de quem ganhou 
         if (ryu > ken){
             printf("\nryu ganhou\n");
@@ -35,10 +36,8 @@ int golpe = 1, golpeAnterior = 1, ryu = 0, ken = 0, roundWin;
         } else{
             printf("\nempate\n");
         }
-
             ryu = 0;
             ken = 0;
-        }
         
     }
 }
