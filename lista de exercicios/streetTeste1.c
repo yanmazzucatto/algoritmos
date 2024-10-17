@@ -52,7 +52,7 @@ int numPerfeito(int combo) {
     for (int i = 1; i < combo; i++) {
         // Verificando os divisores do combo
         if (combo % i == 0) { // Se i é um divisor de n
-            // Aqui você só está somando se ele for divisível
+            
             soma += i;
         }
     }
