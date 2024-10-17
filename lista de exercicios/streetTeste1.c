@@ -31,7 +31,7 @@ int golpe = 1, golpeAnterior = 1, ryu = 0, ken = 0, roundWin;
         //verificação de quem ganhou 
         if (ryu > ken){
             printf("\nryu ganhou\n");
-            printf("%d", "ESSES FORAM OS PONTOS DO KEN!!!!: ",&ken, "\n" );
+            printf("%d ESSES FORAM OS PONTOS DO KEN!!!!: ",&ken, "\n" );
             printf("%d", "ESSES FORAM OS PONTOS DO RYU!!!!: ",&ryu, "\n" );
         }else if( ken > ryu){
             printf("\nken ganhou\n");
