@@ -1,5 +1,8 @@
 #include <stdio.h>
 
+// 2760482421017 Yan Mazzucatto|| 2760482421044 Giullia Ladislau 
+
+
 
 int numPerfeito(int combo);
 int numTriangular(int combo);
