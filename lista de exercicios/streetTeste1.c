@@ -18,7 +18,7 @@ int golpe = 1, golpeAnterior = 1, ryu = 0, ken = 0, roundWin;
             if (golpe == 0) break;
 
             if(golpe > 0){
-                golpe == numPerfeito(golpe);
+                golpe = numPerfeito(golpe);
                 ryu += golpe;
             }else if (golpe < 0) {
                 int comboGolpe = -golpe; // Converte para positivo
@@ -31,16 +31,16 @@ int golpe = 1, golpeAnterior = 1, ryu = 0, ken = 0, roundWin;
         //verificação de quem ganhou 
         if (ryu > ken){
             printf("\nryu ganhou\n");
-            printf(" ESSES FORAM OS PONTOS DO KEN!!!!: %i\n",&ken );
-            printf(" ESSES FORAM OS PONTOS DO RYU!!!!: %i\n",&ryu  );
+            printf(" ESSES FORAM OS PONTOS DO KEN!!!!: %i\n",ken );
+            printf(" ESSES FORAM OS PONTOS DO RYU!!!!: %i\n",ryu  );
         }else if( ken > ryu){
             printf("\nken ganhou\n");
-            printf("ESSES FORAM OS PONTOS DO KEN!!!!: %i\n",&ken );
-            printf("ESSES FORAM OS PONTOS DO RYU!!!!: %i\n",&ryu );
+            printf("ESSES FORAM OS PONTOS DO KEN!!!!: %i\n",ken );
+            printf("ESSES FORAM OS PONTOS DO RYU!!!!: %i\n",ryu );
             } else{
             printf("\nempate\n");
-            printf(" ESSES FORAM OS PONTOS DO KEN!!!!: %i\n",&ken );
-            printf("ESSES FORAM OS PONTOS DO RYU!!!!: %i \n",&ryu );
+            printf(" ESSES FORAM OS PONTOS DO KEN!!!!: %i\n",ken );
+            printf("ESSES FORAM OS PONTOS DO RYU!!!!: %i \n",ryu );
             }
             ryu = 0;
             ken = 0;
