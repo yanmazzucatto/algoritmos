@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-// 2760482421017 Yan Mazzucatto|| 2760482421044 Giullia Ladislau 
+// 2760482421017 Yan Mazzucatto || 2760482421044 Giullia Ladislau 
 
 //o golpe acumula os pontos jogados e faz a verificação através de um IF para ver qual dos personagens receberá o valor inserido.
 // O golpe anterior serve para fazer a verificação de quando houve uma troca de round, pois ele verifica se o usuário digitou um numero positivo após ter jogado um número negativo;
