@@ -22,10 +22,10 @@ int golpe = 1, golpeAnterior = 1, ryu = 0, ken = 0, roundWin;
                 ryu += golpe;
             }else if (golpe < 0) {
                 int comboGolpe = -golpe; // Converte para positivo
-                if (numPerfeito(comboGolpe) > comboGolpe) {
+            
                     golpe = -numPerfeito(comboGolpe); // Mantém o sinal negativo
                     ken += -golpe; // Adiciona o valor positivo ao total de Ken
-            }
+            
         }
     }
         //verificação de quem ganhou 
