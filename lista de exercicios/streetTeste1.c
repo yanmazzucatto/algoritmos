@@ -30,11 +30,11 @@ int golpe = 1, golpeAnterior = 1, ryu = 0, ken = 0, roundWin;
     }
         //verificação de quem ganhou 
         if (ryu > ken){
-            printf("\nryu ganhou\n");
+            printf("\nRyu ganhou\n");
         }else if( ken > ryu){
-            printf("\nken ganhou\n");
+            printf("\nKen ganhou\n");
             } else{
-            printf("\nempate\n");
+            printf("\nEmpate\n");
             }
             ryu = 0;
             ken = 0;
@@ -57,7 +57,6 @@ int numPerfeito(int combo) {
         }
     }
     if(soma == combo){
-        printf("\nESSE GOLPE FOI UM COMBO!!!! \n");
         return combo * 3;
         
     } else {
@@ -71,10 +70,9 @@ int numTriangular(int combo) {
     int soma = 0; // Começa a soma dos divisores em 0
     // Verifica todos os números de 1 até n
 
-    for (int i = 1; i < combo; i++) {// Aqui você só está verificando se o número é divisível pelo combo
+    for (int i = 1; i < combo; i++) {
         soma += i;
         if (soma == combo ) { // Se i é um divisor de n
-        printf("\nESSE GOLPE FOI UM COMBO triangular!!!! \n");
             return combo * 2;
         } 
     }

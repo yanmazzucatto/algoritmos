@@ -1,99 +1,88 @@
 #include <stdio.h>
 
+
+int numPerfeito(int combo);
+int numTriangular(int combo);
+
+int main(void){
+int golpe = 1, golpeAnterior = 1, ryu = 0, ken = 0, roundWin;
+    // Loop para o jogo
+    while (golpe != 0 ){
+        ryu = 0;
+        ken = 0;
+
+        while (golpeAnterior != 0) {
+            printf("Digite o Golpe: (positivo = Ryu, Negativo = Ken)\n");
+            scanf("%d", &golpe);
+        
+            if (golpe == 0) break;
+
+            if(golpe > 0){
+                golpe = numPerfeito(golpe);
+                ryu += golpe;
+            }else if (golpe < 0) {
+                int comboGolpe = -golpe; // Converte para positivo
+            
+                    golpe = -numPerfeito(comboGolpe); // Mantém o sinal negativo
+                    ken += -golpe; // Adiciona o valor positivo ao total de Ken
+            
+        }
+    }
+        //verificação de quem ganhou 
+        if (ryu > ken){
+            printf("\nryu ganhou\n");
+            printf(" ESSES FORAM OS PONTOS DO KEN!!!!: %i\n",ken );
+            printf(" ESSES FORAM OS PONTOS DO RYU!!!!: %i\n",ryu  );
+        }else if( ken > ryu){
+            printf("\nken ganhou\n");
+            printf("ESSES FORAM OS PONTOS DO KEN!!!!: %i\n",ken );
+            printf("ESSES FORAM OS PONTOS DO RYU!!!!: %i\n",ryu );
+            } else{
+            printf("\nempate\n");
+            printf(" ESSES FORAM OS PONTOS DO KEN!!!!: %i\n",ken );
+            printf("ESSES FORAM OS PONTOS DO RYU!!!!: %i \n",ryu );
+            }
+            ryu = 0;
+            ken = 0;
+        
+    }
+}
+
+
+
 // Função para verificar se um número é perfeito
-int is_perfect(int n) {
-    int sum = 0;
-    for (int i = 1; i <= n / 2; i++) {
-        if (n % i == 0) {
-            sum += i;
+int numPerfeito(int combo) {
+    int soma = 0; // Começa a soma dos divisores em 0
+    // Verifica todos os números de 1 até n
+
+    for (int i = 1; i < combo; i++) {
+        // Verificando os divisores do combo
+        if (combo % i == 0) { // Se i é um divisor de n
+            // Aqui você só está somando se ele for divisível
+            soma += i;
         }
     }
-    return sum == n;
-}
-
-// Função para verificar se um número é triangular
-int is_triangular(int n) {
-    int sum = 0;
-    for (int i = 1; sum < n; i++) {
-        sum += i;
-        if (sum == n) {
-            return 1; // É triangular
-        }
-    }
-    return 0; // Não é triangular
-}
-
-// Função para calcular o dano
-int calculate_damage(int value) {
-    if (value < 0) {
-        value = -value; // Pega o módulo se for negativo
-    }
-    
-    if (is_perfect(value)) {
-        printf("Combo: %d (Perfeito) -> Dano: %d\n", value, value * 3);
-        return value * 3; // Multiplica por 3 se for perfeito
-    } else if (is_triangular(value)) {
-        printf("Combo: %d (Triangular) -> Dano: %d\n", value, value * 2);
-        return value * 2; // Multiplica por 2 se for triangular
+    if(soma == combo){
+        printf("\nESSE GOLPE FOI UM COMBO!!!! \n");
+        return combo * 3;
+        
     } else {
-        printf("Combo: %d -> Dano: %d\n", value, value); // Não altera o valor
-        return value;
+        int numTringular(int combo);
+        
     }
+
 }
+// Função para verificar se um número é triangular
+int numTriangular(int combo) {
+    int soma = 0; // Começa a soma dos divisores em 0
+    // Verifica todos os números de 1 até n
 
-int main() {
-    int golpe, ryu_points, ken_points, ryu_rounds = 0, ken_rounds = 0;
-
-    while (1) {
-        ryu_points = 0;
-        ken_points = 0;
-
-        printf("Iniciando um novo round...\n");
-
-        // Lê golpes de Ryu (valores positivos)
-        while (1) {
-            scanf("%d", &golpe);
-            if (golpe == 0) {
-                // Termina a luta
-                if (ryu_rounds > ken_rounds) {
-                    printf("Ryu venceu\n");
-                } else if (ken_rounds > ryu_rounds) {
-                    printf("Ken venceu\n");
-                } else {
-                    printf("empatou\n");
-                }
-                return 0;
-            }
-            if (golpe < 0) {
-                break; // Sai do loop se for negativo
-            }
-            ryu_points += calculate_damage(golpe);
-        }
-
-        // Lê golpes de Ken (valores negativos)
-        while (1) {
-            ken_points += calculate_damage(golpe); // Usa o valor negativo
-            if (golpe >= 0) {
-                break; // Sai do loop se for positivo
-            }
-            scanf("%d", &golpe);
-        }
-
-        // Mostra os pontos totais de cada lutador no round
-        printf("Ryu total de pontos: %d\n", ryu_points);
-        printf("Ken total de pontos: %d\n", ken_points);
-
-        // Determina o vencedor do round
-        if (ryu_points > ken_points) {
-            ryu_rounds++;
-            printf("Ryu venceu o round %d!\n", ryu_rounds);
-        } else if (ken_points > ryu_points) {
-            ken_rounds++;
-            printf("Ken venceu o round %d!\n", ken_rounds);
-        } else {
-            printf("Round %d empatou!\n", ryu_rounds + ken_rounds);
-        }
+    for (int i = 1; i < combo; i++) {// Aqui você só está verificando se o número é divisível pelo combo
+        soma += i;
+        if (soma == combo ) { // Se i é um divisor de n
+        printf("\nESSE GOLPE FOI UM COMBO triangular!!!! \n");
+            return combo * 2;
+        } 
     }
-
-    return 0;
+    return combo; 
 }
