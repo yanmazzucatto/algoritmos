@@ -12,7 +12,7 @@ int numTriangular(int combo);
 
 int main(void){
 int golpe = 1, golpeAnterior = 1, ryu = 0, ken = 0;
-    // Loop para o jogo
+    // loop para o jogo, caso ele digite 0 o jogo acaba
     while (golpe != 0 ){
         ryu = 0;
         ken = 0;
@@ -27,10 +27,10 @@ int golpe = 1, golpeAnterior = 1, ryu = 0, ken = 0;
                 golpe = numPerfeito(golpe);
                 ryu += golpe;
             }else if (golpe < 0) {
-                int comboGolpe = -golpe; // Converte para positivo
+                int comboGolpe = -golpe; // converte para positivo
             
-                    golpe = -numPerfeito(comboGolpe); // Mantém o sinal negativo
-                    ken += -golpe; // Adiciona o valor positivo ao total de Ken
+                    golpe = -numPerfeito(comboGolpe); // mantém o sinal negativo
+                    ken += -golpe; // adiciona o valor positivo ao total de Ken
             
         }
     }
@@ -50,14 +50,14 @@ int golpe = 1, golpeAnterior = 1, ryu = 0, ken = 0;
 
 
 
-// Função para verificar se um número é perfeito
+// função para verificar se um número é perfeito
 int numPerfeito(int combo) {
-    int soma = 0; // Começa a soma dos divisores em 0
-    // Verifica todos os números de 1 até n
+    int soma = 0; // começa a soma dos divisores em 0
+    // verifica todos os números de 1 até n
 
     for (int i = 1; i < combo; i++) {
-        // Verificando os divisores do combo
-        if (combo % i == 0) { // Se i é um divisor de n
+        // verificando os divisores do combo
+        if (combo % i == 0) { // se i é um divisor de n
             
             soma += i;
         }
@@ -71,14 +71,14 @@ int numPerfeito(int combo) {
     }
 
 }
-// Função para verificar se um número é triangular
+// função para verificar se um número é triangular
 int numTriangular(int combo) {
-    int soma = 0; // Começa a soma dos divisores em 0
-    // Verifica todos os números de 1 até n
+    int soma = 0; // começa a soma dos divisores em 0
+    // verifica todos os números de 1 até n
 
     for (int i = 1; i < combo; i++) {
         soma += i;
-        if (soma == combo ) { // Se i é um divisor de n
+        if (soma == combo ) { // se i é um divisor de n
             return combo * 2;
         } 
     }
