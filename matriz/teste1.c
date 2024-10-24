@@ -2,7 +2,12 @@
 #include <math.h>
 
 int main(){
-    float media[2][5];
+    float matriz[5][2];
     
+    for (int i = 0; i < 5; i++){
+        for( int j = 0; j < 2; j ++ ){
+        scanf("%d", &matriz[i][j]);
+        }
+    }
     
 }
