@@ -11,6 +11,9 @@ header{
     height: 10vh;
     width:100vw;
     padding: 10px 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
 .hero {
     position: relative; 
