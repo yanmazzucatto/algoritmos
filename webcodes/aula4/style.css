@@ -72,7 +72,8 @@ a{
     margin-top: 15px;
     margin-bottom: 15px;
     height: 120px;
-    width: 200px;
+    width: auto;
+    padding: ;
     border-radius: 20px;
     background-color: rgb(250, 235, 215, 0.9) ;
 }
@@ -93,9 +94,17 @@ h1{
 
 }
 h3{
-    font: 20px white;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
+
+    font-family: 'Arial', sans-serif;
+    font-size: 1.8rem;
+    color: #333;
+    background-color: #e0e0e094; /* Fundo amarelo */
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Sombra do texto */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra do bloco */
+    transition: transform 0.3s;}
 h4{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif white;
 }
