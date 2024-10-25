@@ -69,13 +69,12 @@ a{
 }
 
 .login{
-    margin-top: 15px;
-    margin-bottom: 15px;
-    height: 120px;
+    margin-top: 55px;
+    margin-bottom: 55px;
+    height: auto;
     width: auto;
-    padding: 0px 05px;
+    padding: 10px 05px;
     border-radius: 20px;
-    
     background-color: #e0e0e094; /* Fundo amarelo */
     padding: 20px;
     border-radius: 8px;
@@ -107,5 +106,8 @@ h3{
     color: #333;
     }
 h4{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif white;
+    font-family: Arial, Helvetica, sans-serif ;
+    color: white;
+    font-size: 1.3em;
+    margin-top: 20px;
 }
