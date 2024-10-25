@@ -8,12 +8,15 @@ header{
     position: fixed;
     z-index: 10;
     background-color: rgb(247, 242, 242);   
-    height: 10vh;
-    width:100vw;
+    height: 7vh;
+    width:95vw;
     padding: 10px 20px;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    border-radius: 90px;
+    justify-self: center;
+    justify-items: center;
 }
 .hero {
     position: relative; 
@@ -50,7 +53,10 @@ header{
 a{
     font-family: 'Times New Roman', Times, serif;
     font: 20px black;
+    margin: 20px 20px;
+    margin-top: 20px;
 }
+
 .login{
     margin-top: 15px;
     margin-bottom: 15px;
