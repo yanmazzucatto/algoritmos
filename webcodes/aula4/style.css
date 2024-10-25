@@ -54,6 +54,7 @@ a{
 }
 h1{
     background-color: antiquewhite ;
+    backdrop-filter: o;
 
 }
 h3{
