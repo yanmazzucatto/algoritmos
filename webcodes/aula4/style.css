@@ -67,25 +67,6 @@ a{
     margin: 20px 20px;
     margin-top: 20px;
 }
-
-.login{
-    margin-top: 55px;
-    margin-bottom: 55px;
-    height: auto;
-    width: auto;
-    padding: 10px 05px;
-    border-radius: 20px;
-    background-color: #e0e0e094; /* Fundo amarelo */
-    padding: 20px;
-    border-radius: 8px;
-    text-align: center;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Sombra do texto */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra do bloco */
-    transition: transform 0.3s;
-}
-.login :hover{
-    background-color:rgba(192, 185, 176, 0.9) ;
-}
 .animate-text {
     background-color: #e0e0e094; /* Fundo inicial */
     padding: 20px;
@@ -126,13 +107,6 @@ h1 {
     color: #000; /* Mudar a cor do texto para preto ao passar o mouse */
     transform: translateY(-2px); /* Pequena elevação ao passar o mouse */
 }
-
-h3{
-
-    font-family: 'Arial', sans-serif;
-    font-size: 1.4rem;
-    color: #333;
-    }
     h4 {
         font-family: Arial, Helvetica, sans-serif;
         color: white;
@@ -140,4 +114,32 @@ h3{
         margin-top: 20px;
         text-shadow: 0px 2px 5px rgba(168, 168, 2, 0.74);
     }
+    .login {
+        margin-top: 55px;
+        margin-bottom: 55px;
+        padding: 20px; /* Ajuste para manter o padding consistente */
+        border-radius: 20px; /* Mantenha a borda arredondada */
+        background-color: #e0e0e094; /* Fundo claro */
+        text-align: center;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* Sombra mais pronunciada */
+        transition: transform 0.3s, background-color 0.3s; /* Transição suave */
+        position: relative; /* Para o efeito de hover */
+        overflow: hidden; /* Para manter a consistência com o título */
+    }
     
+    .login:hover {
+        transform: translateY(-3px); /* Pequena elevação ao passar o mouse */
+        background-color: #e0e0e0; /* Alterar a cor de fundo ao passar o mouse */
+    }
+    
+    h3 {
+        font-family: 'Arial', sans-serif;
+        font-size: 1.4rem;
+        color: #000000;
+        text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3); /* Sombra mais suave */
+        margin: 10px 0; /* Margem para espaçamento */
+    }
+    u{
+        opacity: 30%;
+        border-radius: 20px;
+    }
