@@ -86,23 +86,7 @@ a{
 .login :hover{
     background-color:rgba(192, 185, 176, 0.9) ;
 }
-h1{
-    font-family: 'Arial', sans-serif;
-    font-size: 3rem;
-    color: #333;
-    background-color: #e0e0e094; /* Fundo amarelo */
-    padding: 20px;
-    border-radius: 8px;
-    text-align: center;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Sombra do texto */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra do bloco */
-    transition: transform 0.3s;
-
-}
-h1 {
-    font-family: 'Arial', sans-serif;
-    font-size: 3rem;
-    color: #333; /* Cor inicial do texto */
+.animate-text{
     background-color: #e0e0e094; /* Fundo inicial */
     padding: 20px;
     border-radius: 8px;
@@ -113,28 +97,31 @@ h1 {
     position: relative; /* Para o pseudo-elemento */
     overflow: hidden; /* Para garantir que o pseudo-elemento não saia do bloco */
 }
+h1 {
+    font-family: 'Arial', sans-serif;
+    font-size: 3rem;
+    color: #333; /* Cor inicial do texto */
+    width: 100%;
+    height: 100%;
+    z-index: 1; /* Adicione este z-index para que o texto fique acima */
+}
 
-h1::before {
+.animate-text::before {
     content: "";
     position: absolute;
     top: 0;
     left: -100%;
-    width: 100%;
-    height: 100%;
     background-color: #ffeb3b; /* Cor amarela */
     transition: left 0.5s; /* Transição da posição */
-    z-index: 3; /* Para que fique atrás do texto */
+    z-index: 0; /* Mantenha este z-index para o fundo */
 }
 
-h1:hover::before {
+.animate-text:hover::before {
     left: 0; /* Mover o fundo para a direita ao passar o mouse */
 }
 
 h1:hover {
     color: #000; /* Mudar a cor do texto para preto ao passar o mouse */
-}
-
-h1:hover {
     transform: translateY(-2px); /* Pequena elevação ao passar o mouse */
 }
 
