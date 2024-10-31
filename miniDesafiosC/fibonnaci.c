@@ -10,11 +10,9 @@ int main(){
     n2 = n1;
     for ( int i = 0; i <= 100; i++)
     {
-        n2 += n1;
-        n1 ++;
-        n2 = n1;
+        n1 = n1 + n1;
         printf("\n valores - fibonnaci: %d", n1 );
     }
-    
+    //interminado
 
 }
