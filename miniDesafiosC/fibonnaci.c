@@ -4,7 +4,7 @@ int main(){
 
     int n1, n2;
 
-    printf("digite o primeiro numero");
+    printf("digite o primeiro numero: \n");
     scanf("%d", &n1);
     
     n2 = n1;
