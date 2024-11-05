@@ -118,7 +118,7 @@ h1 {
         margin-top: 55px;
         margin-bottom: 55px;
         padding: 10px 8px; /* Ajuste para manter o padding consistente */
-        border-radius: 20px; /* Mantenha a borda arredondada */
+        border-radius: 8px; /* Mantenha a borda arredondada */
         background-color: #e0e0e094; /* Fundo claro */
         text-align: center;
         box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* Sombra mais pronunciada */
