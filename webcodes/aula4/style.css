@@ -152,16 +152,20 @@ h1 {
         flex-wrap: wrap;
     }
     #servico1{
-        width: 200px;
+        width: 150px;
     }
     #servico2{
-        width: 200px;
+        width: 150px;
     }
     #servico3{
-        width: 200px;
+        width: 150px;
     }
     #title-services{
         justify-self: center;
         display: flex;
         grid-column: 1/-1;
+    }
+    .icon-services{
+        filter: contrast(0);
+        
     }
