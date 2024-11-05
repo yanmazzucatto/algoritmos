@@ -163,5 +163,5 @@ h1 {
     #title-services{
         justify-self: center;
         display: flex;
-        grid-row: span(2) ;
+        grid-column: 1/-1;
     }
