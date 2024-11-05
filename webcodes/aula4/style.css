@@ -145,6 +145,8 @@ h1 {
         direction: row;
         justify-items: center;
         align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
     }
     #servico1{
         width: 200px;
@@ -157,5 +159,5 @@ h1 {
     }
     #title-services{
         width: 100%;
-        
+        justify-self: center;
     }
