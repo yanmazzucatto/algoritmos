@@ -167,5 +167,9 @@ h1 {
     }
     .icon-services{
         background-color: gray;
-
+        transition: filter 0.3s ease; /* Transição suave para o efeito */
+        filter: grayscale(100%);
+    }
+    .icon-services :hover{
+        filter: grayscale(0%);
     }
