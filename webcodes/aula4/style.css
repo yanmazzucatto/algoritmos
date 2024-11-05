@@ -142,4 +142,16 @@ h1 {
     }
     .section-services{
         display: flex;
+        direction: row;
+        justify-items: center;
+        align-items: center;
+    }
+    #servico1{
+        width: 200px;
+    }
+    #servico2{
+        width: 200px;
+    }
+    #servico3{
+        width: 200px;
     }
