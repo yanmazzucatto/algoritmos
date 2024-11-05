@@ -142,9 +142,10 @@ h1 {
     }
     .section-services{
         display: flex;
-        direction: row;
+        flex-direction: row;
         justify-items: center;
         align-items: center;
+        align-self: center;
         justify-content: center;
         flex-wrap: wrap;
     }
