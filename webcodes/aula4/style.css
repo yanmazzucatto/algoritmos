@@ -141,7 +141,7 @@ h1 {
         margin: 10px 0; /* Margem para espaçamento */
     }
     .section-services{
-        display: flex;
+        display: grid;
         flex-direction: row;
         justify-items: center;
         align-items: center;
@@ -159,6 +159,6 @@ h1 {
         width: 200px;
     }
     #title-services{
-        width: 100%;
         justify-self: center;
+        display: flex;
     }
