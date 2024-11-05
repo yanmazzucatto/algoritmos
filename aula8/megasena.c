@@ -1,17 +1,22 @@
 #include <stdio.h>
 
-int main(){
-
-    int d1, d2, d3, d4, d5 ,d6;
-
-    for (d1 = 1; d1 <= 60; d1++)
-        for (d2 = d1 +1; d2 <= 60; d2++)
-            for (d3 = d2 + 1; d3 <= 60; d3++)
-                for (d4 = d3 + 1; d4 <= 60; d4++)
-                    for (d5 = d4 + 1; d5 <= 60; d5++)
-                        for (d6 = d5 + 1; d6 <= 60; d6++)
-                        {
-                            printf("%d, %d, %d, %d, %d, %d,", d1, d2, d3, d4, d5, d6);
-                        }
-
+int main() {
+    int n;
+    
+    // Leitura do número n
+    printf("Digite o valor de n: ");
+    scanf("%d", &n);
+    
+    // Laço externo: para cada linha de 1 até n
+    for (int i = 1; i <= n; i++) {
+        // Laço interno: para imprimir os números de 1 até o valor da linha
+        for (int j = 1; j <= i; j++) {
+            printf("%d ", j);  // Imprime o número j seguido de um espaço
+        }
+        
+        // Depois de imprimir todos os números na linha, quebra a linha
+        printf("\n");
+    }
+    
+    return 0;
 }
