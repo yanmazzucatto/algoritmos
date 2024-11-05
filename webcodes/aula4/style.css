@@ -119,12 +119,13 @@ h1 {
         margin-bottom: 55px;
         padding: 10px 8px; /* Ajuste para manter o padding consistente */
         border-radius: 8px; /* Mantenha a borda arredondada */
-        background-color: #e0e0e094; /* Fundo claro */
+        background-color: #FFF; /* Fundo claro */
         text-align: center;
         box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* Sombra mais pronunciada */
         transition: transform 0.3s, background-color 0.3s; /* Transição suave */
         position: relative; /* Para o efeito de hover */
         overflow: hidden; /* Para manter a consistência com o título */
+        font-family: monospace;
     }
     
     .login:hover {
