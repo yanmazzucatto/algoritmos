@@ -166,6 +166,6 @@ h1 {
         grid-column: 1/-1;
     }
     .icon-services{
-        filter: contrast(0);
-        
+        background-color: gray;
+
     }
