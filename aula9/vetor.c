@@ -5,4 +5,6 @@ int main(){
     int a;
     nota[5] = 95; 
     a = nota[5];
+
+    printf("");
 }
