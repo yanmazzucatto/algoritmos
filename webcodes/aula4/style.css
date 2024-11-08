@@ -174,7 +174,7 @@ h1 {
         filter: grayscale(0%);
     }
     .social-media{
-        background-color: black;
+        background-color: rgb(27, 27, 27);
         flex-direction: column;
         justify-items: center;
         align-items: center;
