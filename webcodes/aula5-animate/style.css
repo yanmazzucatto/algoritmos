@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #121212; /* Fundo escuro */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .container {
+    perspective: 1500px; /* Distância para a perspectiva 3D */
+  }
+  
+  .cube {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    transform-style: preserve-3d;
+    transform: rotateX(-20deg) rotateY(20deg);
+    animation: rotate 5s infinite linear;
+  }
+  
+  .face {
+    position: absolute;
+    width: 300px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #333;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+  
+  .face .icon {
+    width: 40px;
+    height: 40px;
+    margin-left: 10px;
+  }
+  
+  .face img {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .face span {
+    margin-left: 20px;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .facebook {
+    background-color: #3b5998;
+    transform: rotateY(0deg) translateZ(150px);
+  }
+  
+  .twitter {
+    background-color: #1da1f2;
+    transform: rotateY(90deg) translateZ(150px);
+  }
+  
+  .instagram {
+    background-color: #e4405f;
+    transform: rotateY(180deg) translateZ(150px);
+  }
+  
+  .linkedin {
+    background-color: #0077b5;
+    transform: rotateY(270deg) translateZ(150px);
+  }
+  
+  .face:hover {
+    transform: translateX(-20px) rotateY(0deg); /* Desloca para a esquerda */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
+  }
+  
+  /* Animação de rotação para criar o efeito de cubo girando */
+  @keyframes rotate {
+    0% {
+      transform: rotateX(-20deg) rotateY(20deg);
+    }
+    100% {
+      transform: rotateX(-20deg) rotateY(380deg);
+    }
+  }
+  
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .layer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 80px;
+    width: 300px;
+    margin: 10px 0;
+    background-color: #333; /* Cor de fundo inicial */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    position: relative;
+  }
+  
+  .layer .icon {
+    width: 40px;
+    height: 40px;
+    margin-left: 10px;
+  }
+  
+  .layer img {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .layer span {
+    margin-left: 20px;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  /* Efeito hover */
+  .layer:hover {
+    transform: translateX(20px); /* Desloca para a direita */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
+  }
+  
+  /* Cores correspondentes às redes sociais */
+  .layer-1:hover {
+    background-color: #3b5998; /* Facebook */
+  }
+  
+  .layer-2:hover {
+    background-color: #1da1f2; /* Twitter */
+  }
+  
+  .layer-3:hover {
+    background-color: #e4405f; /* Instagram */
+  }
+  
+  .layer-4:hover {
+    background-color: #0077b5; /* LinkedIn */
+  }

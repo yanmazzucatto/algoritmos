@@ -286,4 +286,9 @@ h1 {
         font-size: 24px;
         animation-name: background-animate, linear 6s;
     }
+    .box h2{
+        font-size: 1.25em;    
+        color: transparent;
+        line-height: ;
+    }
     
