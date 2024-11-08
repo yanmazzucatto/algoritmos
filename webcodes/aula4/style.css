@@ -195,5 +195,13 @@ h1 {
         z-index: calc(1* var(--i));
     }
     @keyframes background-animate {
-        
+        0%{
+            background-color:#000000 ;
+        }
+        40%{
+            background-color:#333 ;
+        }
+        70%{
+            background-color:#000000 ;
+        }
     }
