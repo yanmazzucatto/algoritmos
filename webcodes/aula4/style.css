@@ -196,7 +196,8 @@ h1 {
         z-index: calc(1* var(--i));
     }
     ul li :hover{
-        transform: X() ;
+        transform: translateX(-50) ;
+        
     }
     @keyframes background-animate {
         0%{
