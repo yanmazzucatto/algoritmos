@@ -227,7 +227,12 @@ footer p {
   font-size: 1.5em;
   text-decoration:none;
   }
-
-  .social-icon:hover{
-    color: #34e0ec;
+    .fab .fa-facebook-f:hover{
+        color:rgb(54, 54, 255);
+    }
+    .fab .fa-twitter{
+        color:rgb(33, 33, 255);
+    }
+    .fab .fa-instagram{
+        color: coral;
     }
