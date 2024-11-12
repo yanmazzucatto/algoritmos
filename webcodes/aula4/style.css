@@ -323,13 +323,13 @@ h1 {
         opacity: 1;
     }
     #layer0:hover{
-        color:green;
+        font-style:green;
     }#layer1:hover{
-        color:yellow;
+        font-style:yellow;
     }#layer2:hover{
-        color:blue;
+        font-style:blue;
     }#layer3:hover{
-        color:blueviolet;
+        font-style:blueviolet;
     }#layer4:hover{
-        color:gray;
+        font-style:gray;
     }
