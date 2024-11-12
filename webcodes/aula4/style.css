@@ -322,4 +322,14 @@ h1 {
     {
         opacity: 1;
     }
-    
+    #layer0:hover{
+        color:green;
+    }#layer1:hover{
+        color:yellow;
+    }#layer2:hover{
+        color:blue;
+    }#layer3:hover{
+        color:blueviolet;
+    }#layer4:hover{
+        color:gray;
+    }
