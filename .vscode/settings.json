@@ -60,5 +60,6 @@
   "files.associations": {
     "stdio.h": "c"
   },
-  "gitdoc.enabled": true
+  "gitdoc.enabled": true,
+  "liveServer.settings.port": 5501
 }

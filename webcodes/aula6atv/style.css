@@ -1,0 +1,233 @@
+
+
+/* Resetando margens e padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  /* Definindo a fonte global */
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Se quiser garantir que todas as fontes, incluindo o título e itens específicos, usem a fonte Roboto */
+h1, h2, h3, h4, h5, h6, p, a, li, span, div {
+  font-family: 'Oswald', sans-serif;
+}
+
+
+
+  /* Estilo do menu */
+  nav {
+    background-color: #333;
+    font-family: Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+  }
+
+/* Logotipo */
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 40px;
+  margin-right: 8px; /* Espaço entre a imagem e o texto */
+}
+
+.logo-text {
+  color: #ffcc00; /* Substitua pela cor desejada */
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+/* Estilo do menu */
+.menu {
+  list-style-type: none;
+  display: flex;
+  margin: 0;
+}
+/* Redes sociais */
+.social-icons a {
+  margin-left: 10px;
+}
+
+.social-icons img {
+  width: 24px;
+  height: 24px;
+  filter: invert(1); /* Torna os ícones brancos em fundo escuro */
+  transition: transform 0.3s;
+}
+
+.social-icons img:hover {
+  transform: scale(1.2); /* Aumenta levemente o tamanho ao passar o mouse */
+}
+  
+  .menu-item {
+    position: relative;
+    padding: 10px 20px;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .menu-item:hover {
+    background-color: #444;
+  }
+  
+  /* Estilo dos submenus */
+  .submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    list-style-type: none;
+    background-color: #555;
+    min-width: 200px; /* Largura do submenu */
+  }
+  
+  .menu-item:hover .submenu {
+    display: block;
+  }
+  
+  .submenu li {
+    padding: 10px;
+    border-bottom: 1px solid #666;
+  }
+  
+  .submenu li:last-child {
+    border-bottom: none;
+  }
+  
+  .submenu a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .submenu a:hover {
+    background-color: #666;
+  }
+  
+  /* Melhorando a responsividade */
+  @media (max-width: 768px) {
+    .menu {
+      flex-direction: column;
+    }
+  
+    .submenu {
+      min-width: 100%;
+    }
+  }
+  
+  /* Layout do conteúdo */
+.content-wrapper {
+  display: flex;
+  min-height: 80vh;
+}
+
+.sidebar {
+  width: 250px;
+  background-color: #f4f4f4;
+  padding: 20px;
+  background: linear-gradient(135deg, #4CAF50, #2e7d32); /* Gradiente de verde */
+}
+
+.aside-menu {
+  list-style-type: none;
+}
+
+.aside-menu li {
+  margin-bottom: 10px;
+}
+
+.aside-menu a {
+  text-decoration: none;
+  color: #ccf70f;
+  padding: 10px;
+  display: block;
+  border-radius: 5px;
+}
+
+.aside-menu a:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.main-content {
+  flex-grow: 1;
+  padding: 20px;
+  background-color: #fafafa;
+}
+h1 {
+  color: #333;
+}
+
+#content-area {
+  margin-top: 20px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  min-height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #666;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .content-wrapper {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    padding: 10px;
+  }
+  .main-content {
+    padding: 10px;
+  }
+}
+
+#content-area {
+  margin-top: 20px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  min-height: 200px;
+  display: flex;
+  flex-direction: column; /* Exibir os itens em uma coluna */
+  justify-content: flex-start; /* Alinhamento dos itens no início */
+  align-items: flex-start; /* Alinhar os itens ao início */
+  color: #666;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 14px;
+  font-family: Arial, sans-serif;
+}
+
+footer p {
+  margin: 0;
+}
+
+.social-icons{
+  display: flex;
+  gap: 15px;
+  }
+  .social-icon{
+  color: #c5b9b9;
+  font-size: 1.5em;
+  text-decoration:none;
+  }
+
+  .social-icon:hover{
+    color: #34e0ec;
+    }
