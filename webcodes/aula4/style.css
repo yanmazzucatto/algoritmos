@@ -178,7 +178,6 @@ h1 {
         filter: grayscale(0%);
     }
     .social-media{
-        background-color: rgb(27, 27, 27);
         flex-direction: column;
         justify-items: center;
         align-items: center;
@@ -189,6 +188,8 @@ h1 {
         font-family: 'Arial', sans-serif;
         font-size: 24px;
         animation-name: background-animate, linear 6s;
+        width:300px
+        
     }
     
     @keyframes background-animate {
