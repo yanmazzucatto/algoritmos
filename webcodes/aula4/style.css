@@ -180,7 +180,7 @@ h1 {
         position: absolute;  /* Garante que o aside não afete o layout */
         left: 0;  /* Posiciona à esquerda */
         top: 0;  /* Começa no topo */
-        height: 100vh;  /* A altura do aside será a altura da tela */
+        height: 91vh;  /* A altura do aside será a altura da tela */
         width: 360px;  /* Largura definida para o aside */
         background-color: rgba(0, 0, 0, 0.7);  /* Fundo escuro para visibilidade */
         z-index: 2;  /* Garante que o aside fique acima da imagem de fundo */
@@ -190,8 +190,9 @@ h1 {
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: flex-start;
+        justify-content: center;
         animation-name: background-animate, linear 6s;
+        border-radius: 20px 0px;
     }.hero .animate-text {
         z-index: 3;  /* Garantir que o texto do Hero fique acima do aside */
     }
