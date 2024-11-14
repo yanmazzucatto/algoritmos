@@ -328,13 +328,16 @@ h1 {
         opacity: 1;
     }
     #layer0:hover{
-        font-style:green;
+        background-color:blue;
     }#layer1:hover{
-        font-style:yellow;
+        background-color:green;
     }#layer2:hover{
-        font-style:blue;
+        background-color:cyan;
     }#layer3:hover{
-        font-style:blueviolet;
+        background-color:rgb(255, 252, 60);
     }#layer4:hover{
-        font-style:gray;
+        background-color:rgb(96, 183, 255);
+    }
+    #layer5:hover{
+        background-color:red;
     }
