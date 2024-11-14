@@ -348,7 +348,15 @@ h1 {
     perspective: 1000px; /* Define a profundidade para o efeito de 3D */
     margin: 20px;
   }
-  
+  .flip-cards-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    width: 100vh;
+  }
   /* Contêiner que faz a rotação 3D */
   .flip-card-inner {
     position: relative;
@@ -374,9 +382,10 @@ h1 {
   }
   
   .flip-card-front img {
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 130px;
     margin-bottom: 10px;
+    padding: 20px;
   }
   
   /* Back do card (texto descritivo) */
