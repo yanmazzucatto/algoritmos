@@ -5,60 +5,111 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <!-- Certifique-se de adicionar a fonte do Font Awesome para os ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <header>
         <nav>
-            <a href=""> Home</a>
-            <a href=""> Serviços</a>
-            <a href=""> Contate-nos</a>
+            <a href="">Home</a>
+            <a href="">Serviços</a>
+            <a href="">Contate-nos</a>
         </nav>
     </header>
+
     <main>
         <div class="hero">
-            <div class="animate-text"><h1>Fatec Campinas</h1></div>
+            <div class="animate-text">
+                <h1>Fatec Campinas</h1>
+            </div>
             <h4>Seu futuro é feito aqui!</h4>
-            <button class="login"> 
+            <button class="login">
                 <h3>Faça seu Login</h3>
             </button>
             <aside class="social-media">
                 <ul>
-                    <li id="layer0"> <a href="" ><span><i class="fa-brands fa-facebook-f"></i></span> Facebook </a></li>
-                    <li id="layer1"> <a href="" ><span><i class="fa-brands fa-whatsapp"></i></span> WhatsApp </a></li>
-                    <li id="layer2"> <a href="" ><span><i class="fa-brands fa-twitter"></i></span> Twitter </a></li>
-                    <li id="layer3"> <a href="" ><span><i></i class="fa-brands fa-instagram"></span> Instagram</a></li>        
-                    <li id="layer4"> <a href="" ><span><i></i class="fa-brands fa-youtube"></span> Youtube </a></li>        
-                    <li id="layer5"> <a href="" ><span><i></i class="fa-brands fa-linkedin"></span> LinkedIn </a></li>        
+                    <li id="layer0">
+                        <a href=""><span><i class="fa-brands fa-facebook-f"></i></span> Facebook</a>
+                    </li>
+                    <li id="layer1">
+                        <a href=""><span><i class="fa-brands fa-whatsapp"></i></span> WhatsApp</a>
+                    </li>
+                    <li id="layer2">
+                        <a href=""><span><i class="fa-brands fa-twitter"></i></span> Twitter</a>
+                    </li>
+                    <li id="layer3">
+                        <a href=""><span><i class="fa-brands fa-instagram"></i></span> Instagram</a>
+                    </li>
+                    <li id="layer4">
+                        <a href=""><span><i class="fa-brands fa-youtube"></i></span> YouTube</a>
+                    </li>
+                    <li id="layer5">
+                        <a href=""><span><i class="fa-brands fa-linkedin"></i></span> LinkedIn</a>
+                    </li>
                 </ul>
             </aside>
         </div>
+
         <section>
-        
+            <div class="section-services">
+                <h3 id="title-services">Quais Cursos Oferecemos?</h3>
+                <div id="servico1">
+                    <img src="https://cdn-icons-png.flaticon.com/128/993/993515.png" alt="Tecnologia" class="icon-service">
+                </div>
+                <div id="servico2">
+                    <img src="https://cdn-icons-png.flaticon.com/128/2759/2759166.png" alt="Administração" class="icon-service">
+                </div>
+                <div id="servico3">
+                    <img src="https://cdn-icons-png.flaticon.com/128/2166/2166903.png" alt="Química" class="icon-service">
+                </div>
+            </div>
+        </section>
+
+        <!-- Flip Cards -->
+        <section class="flip-cards-container">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <!-- Frente do card -->
+                    <div class="flip-card-front">
+                        <img src="https://cdn-icons-png.flaticon.com/128/993/993515.png" alt="Tecnologia" />
+                        <h4>Tecnologia</h4>
+                    </div>
+                    <!-- Parte de trás do card -->
+                    <div class="flip-card-back">
+                        <p>Cursos de Tecnologia da Informação, Desenvolvimento de Software e mais!</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <!-- Frente do card -->
+                    <div class="flip-card-front">
+                        <img src="https://cdn-icons-png.flaticon.com/128/2759/2759166.png" alt="Administração" />
+                        <h4>Administração</h4>
+                    </div>
+                    <!-- Parte de trás do card -->
+                    <div class="flip-card-back">
+                        <p>Cursos de Gestão de Negócios, Marketing, Finanças e mais!</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <!-- Frente do card -->
+                    <div class="flip-card-front">
+                        <img src="https://cdn-icons-png.flaticon.com/128/2166/2166903.png" alt="Química" />
+                        <h4>Química</h4>
+                    </div>
+                    <!-- Parte de trás do card -->
+                    <div class="flip-card-back">
+                        <p>Cursos de Química, Engenharia Química, Laboratórios e mais!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
-    <section>
-    <div  class="section-services" > 
-        <h3 id="title-services">Quais Cursos Ofereçemos?</h3> 
-        <div id="servico1" > <img src="https://cdn-icons-png.flaticon.com/128/993/993515.png" alt="" srcset="" class="icon-service"></div>
-        <div id="servico2" ><img src="https://cdn-icons-png.flaticon.com/128/2759/2759166.png" alt="" srcset="" class="icon-service"></div>
-        <div id="servico3" ><img src="https://cdn-icons-png.flaticon.com/128/2166/2166903.png" alt="" srcset="" class="icon-service"></div>
-    </div>
-    </section>
-    <div class="flip-card">
-        <div class="flip-card-inner">
-        <!-- Frente do card -->
-        <div class="flip-card-front" >
-            <img src="https://cdn-icons-png.flaticon.com/128/993/993515.png" alt="Facebook" />
-            <h4>Tecnologia</h4>
-        </div>
-        <!-- Parte de trás do card -->
-        <div class="flip-card-front">
-            <img src="https://cdn-icons-png.flaticon.com/128/2759/2759166.png" alt="Facebook" />
-            <h4>Administração</h4>
-        </div>
-        <!-- Parte de trás do card -->
-        <div class="flip-card-front">
-            <img src="https://cdn-icons-png.flaticon.com/128/2166/2166903.png" alt="Facebook" />
-            <h4>Quimica</h4>
-        </div>
+
 </body>
 </html>
