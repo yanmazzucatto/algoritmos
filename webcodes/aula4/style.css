@@ -341,3 +341,76 @@ h1 {
     #layer5:hover{
         background-color:red;
     }
+    /* Estilo global do container de cards */
+.flip-card {
+    width: 200px;  /* Largura do card */
+    height: 300px; /* Altura do card */
+    perspective: 1000px; /* Define a profundidade para o efeito de 3D */
+    margin: 20px;
+  }
+  
+  /* Contêiner que faz a rotação 3D */
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d; /* Mantém a profundidade do efeito */
+  }
+  
+  /* Front do card (ícone e título) */
+  .flip-card-front {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #bbb;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 8px;
+    backface-visibility: hidden; /* Garante que a parte de trás não apareça ao virar */
+  }
+  
+  .flip-card-front img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+  }
+  
+  /* Back do card (texto descritivo) */
+  .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 8px;
+    backface-visibility: hidden; /* Oculta a parte frontal ao virar */
+    transform: rotateY(180deg); /* Gira a parte de trás do card */
+  }
+  
+  /* Efetuar o flip ao passar o mouse */
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg); /* Roda a parte interna 180 graus */
+  }
+  
+  /* Estilo do texto */
+  .flip-card-back p {
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+  }
+  
+  /* Estilo do título */
+  .flip-card-front h4 {
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
