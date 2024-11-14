@@ -190,7 +190,6 @@ h1 {
         animation-name: background-animate, linear 6s;
         width:360px;
         position: absolute;
-        
     }
     
     @keyframes background-animate {
