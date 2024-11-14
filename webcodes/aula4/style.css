@@ -32,21 +32,20 @@ nav{
     display: flex;
     align-items: center;
     justify-content: center;
-}
-.hero {
+}.hero {
     position: relative; 
     justify-content: center;
     width: 100vw;
     height: 100vh;
     display: flex;
-    padding: 0; 
-    z-index: 1; 
+    padding: 0;
+    z-index: 1;
     backdrop-filter: rgb(70, 70, 70);
-    backdrop-filter: opacity(60%) ;
+    backdrop-filter: opacity(60%);
     flex-direction: column;
     align-items: center;
-    
 }
+
 
 .hero::before {
     content: '';
@@ -177,33 +176,37 @@ h1 {
     .icon-services :hover{
         filter: grayscale(0%);
     }
-    .social-media{
-        flex-direction: column;
-        justify-items: center;
-        align-items: center;
-        align-self: center;
-        justify-content: center;
-        height: 100vh;
-        padding-top: 70px;
+    .social-media {
+        position: absolute;  /* Garante que o aside não afete o layout */
+        left: 0;  /* Posiciona à esquerda */
+        top: 0;  /* Começa no topo */
+        height: 100vh;  /* A altura do aside será a altura da tela */
+        width: 360px;  /* Largura definida para o aside */
+        background-color: rgba(0, 0, 0, 0.7);  /* Fundo escuro para visibilidade */
+        z-index: 2;  /* Garante que o aside fique acima da imagem de fundo */
+        padding-top: 70px;  /* Espaço superior para o conteúdo não ficar colado no topo */
         font-family: 'Arial', sans-serif;
         font-size: 24px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
         animation-name: background-animate, linear 6s;
-        width:360px;
-        position: absolute;
+    }.hero .animate-text {
+        z-index: 3;  /* Garantir que o texto do Hero fique acima do aside */
     }
     
     @keyframes background-animate {
         0%{
-            background-color:#000000 ;
+            background-color:#000000;
         }
         40%{
-            background-color:#333 ;
+            background-color:#333;
         }
         70%{
-            background-color:#000000 ;
+            background-color:#000000;
         }
     }
-
     .section-3{
         background-color: rgb(27, 27, 27);
         flex-direction: column;
