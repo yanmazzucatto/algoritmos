@@ -154,15 +154,7 @@ h1 {
         justify-content: center;
         flex-wrap: wrap;
     }
-    #servico1{
-        width: 150px;
-    }
-    #servico2{
-        width: 150px;
-    }
-    #servico3{
-        width: 150px;
-    }
+    
     #title-services{
         justify-self: center;
         display: flex;
@@ -347,8 +339,8 @@ h1 {
     height: 300px; /* Altura do card */
     perspective: 1000px; /* Define a profundidade para o efeito de 3D */
     margin: 20px;
-  }
-  .flip-cards-container{
+    }
+    .flip-cards-container{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -356,18 +348,17 @@ h1 {
     justify-content: center;
     align-content: center;
     width: 100vh;
-  }
+    }
   /* Contêiner que faz a rotação 3D */
-  .flip-card-inner {
+    .flip-card-inner {
     position: relative;
     width: 100%;
     height: 100%;
     transition: transform 0.6s;
     transform-style: preserve-3d; /* Mantém a profundidade do efeito */
-  }
-  
+    }
   /* Front do card (ícone e título) */
-  .flip-card-front {
+    .flip-card-front {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -379,17 +370,15 @@ h1 {
     flex-direction: column;
     border-radius: 8px;
     backface-visibility: hidden; /* Garante que a parte de trás não apareça ao virar */
-  }
-  
-  .flip-card-front img {
+    }
+    .flip-card-front img {
     width: 150px;
     height: 130px;
     margin-bottom: 10px;
     padding: 20px;
-  }
-  
+    }
   /* Back do card (texto descritivo) */
-  .flip-card-back {
+    .flip-card-back {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -402,24 +391,20 @@ h1 {
     border-radius: 8px;
     backface-visibility: hidden; /* Oculta a parte frontal ao virar */
     transform: rotateY(180deg); /* Gira a parte de trás do card */
-  }
-  
+    }
   /* Efetuar o flip ao passar o mouse */
-  .flip-card:hover .flip-card-inner {
+    .flip-card:hover .flip-card-inner {
     transform: rotateY(180deg); /* Roda a parte interna 180 graus */
-  }
-  
+    }
   /* Estilo do texto */
-  .flip-card-back p {
+    .flip-card-back p {
     padding: 20px;
     text-align: center;
     font-size: 14px;
-  }
-  
+    }
   /* Estilo do título */
-  .flip-card-front h4 {
+    .flip-card-front h4 {
     font-size: 18px;
     font-weight: bold;
     text-transform: uppercase;
-  }
-  
+    }
