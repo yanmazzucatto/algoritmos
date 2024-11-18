@@ -39,6 +39,9 @@ nav{
     z-index: 11;
     text-decoration: none;
 }
+.text-header :hover ::after{
+    text-decoration: none;
+}
 .hero {
     position: relative; 
     justify-content: center;
