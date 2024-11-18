@@ -17,7 +17,6 @@ body{
 header{
     position: fixed;
     z-index: 10;
-    background-color: rgb(247, 242, 242);   
     height: 7vh;
     width:100vw;
     padding: 10px 20px;
@@ -26,6 +25,8 @@ header{
     justify-content: space-evenly;
     justify-self: center;
     justify-items: center;
+    background: #3e3f46;
+    filter: brightness(0.7);
 
 }
 nav{
