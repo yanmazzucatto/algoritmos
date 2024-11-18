@@ -339,9 +339,7 @@ h1 {
         background-color:rgb(96, 183, 255);
         z-index: 3;
     }
-    .fa-brands .fa-facebook-f:hover{
-        color: blue;
-    }
+    
     /* Estilo global do container de cards */
 .flip-card {
     width: 200px;  /* Largura do card */
