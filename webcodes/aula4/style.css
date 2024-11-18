@@ -33,7 +33,13 @@ nav{
     display: flex;
     align-items: center;
     justify-content: center;
-}.hero {
+}
+.text-header{
+    color:#fff;
+    z-index: 10;
+    text-decoration: none;
+}
+.hero {
     position: relative; 
     justify-content: center;
     width: 100vw;
