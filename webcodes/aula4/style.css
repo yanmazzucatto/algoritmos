@@ -321,17 +321,23 @@ h1 {
     }
     #layer0:hover{
         background-color:blue;
+        z-index: 3;
     }#layer1:hover{
         background-color:green;
+        z-index: 3;
     }#layer2:hover{
         background-color:cyan;
+        z-index: 3;
     }#layer3:hover{
         background-color:rgb(253, 54, 153);
+        z-index: 3;
     }#layer4:hover{
         background-color:red;
+        z-index: 3;
     }
     #layer5:hover{
         background-color:rgb(96, 183, 255);
+        z-index: 3;
     }
     /* Estilo global do container de cards */
 .flip-card {
