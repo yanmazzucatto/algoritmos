@@ -6,8 +6,8 @@ int main (){
     printf("Digite 79 caracteres: \n");
     for(int i = 0; i < 80; i++ ){
         scanf("%s", &string[i]);
-        for(int j = 0; j < i; j = j-j ){
-            
+        for(int j = i - 1; j < i; j++ ){
+            printf("Os caracteres imprimidos foram:\n %s", string[j]);
         }
     }
     
