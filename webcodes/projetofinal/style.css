@@ -39,7 +39,7 @@ nav .menu-item {
     justify-content: center;
     perspective: 200px;
     letter-spacing: 0.5px;
-    min-height: 7.5em;
+    min-height: 3.5em;
 }
 
 nav .menu-text, nav .menu-text a {
