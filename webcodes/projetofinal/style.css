@@ -4,7 +4,7 @@ body {
 
 .navbar {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    background-color: rgb(177, 177, 177);
+
 }
 
 .card {
@@ -25,6 +25,10 @@ footer a {
 footer a:hover {
     color: #f1c40f;
 }
-.bigode :hover{
-    transform: scale(1.2);
+.bigode {
+    transition: transform 0.3s ease-in-out; 
+}
+
+.bigode:hover {
+    transform: scale(1.7); 
 }
