@@ -10,6 +10,5 @@ int main (){
             printf("Os caracteres imprimidos foram:\n %s", string[j]);
         }
     }
-    
 
 }
