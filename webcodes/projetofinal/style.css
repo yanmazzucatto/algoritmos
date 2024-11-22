@@ -25,3 +25,6 @@ footer a {
 footer a:hover {
     color: #f1c40f;
 }
+.bigode :hover{
+    transform: scale(1.2);
+}
