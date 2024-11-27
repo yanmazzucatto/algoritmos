@@ -19,6 +19,7 @@ body {
     object-fit: cover;
     height:100vh;
     width: 100%;
+    content-visibility: center;
 }
 .card img {
     height: 200px;
