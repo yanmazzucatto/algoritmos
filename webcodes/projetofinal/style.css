@@ -8,7 +8,7 @@
 body {
     font-family: 'Arial', sans-serif;
     color: #fff;
-    background-color: #111; /* Fundo escuro para combinar com o design */
+    background-color: #111; /* Fundo escuro */
     line-height: 1.6;
 }
 
@@ -25,6 +25,7 @@ header {
     width: 100%;
     top: 0;
     z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.8); /* Adiciona um destaque para a barra */
 }
 
 .navbar {
@@ -49,11 +50,13 @@ header {
     font-size: 16px;
     font-weight: bold;
     text-transform: uppercase;
+    color: #f4c400;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8); /* Sombra no texto */
     transition: color 0.3s;
 }
 
 .navbar ul li a:hover {
-    color: #f4c400;
+    color: #fff;
 }
 
 .appointment-btn a {
@@ -77,6 +80,7 @@ header {
     padding: 150px 20px;
     background: url('https://wallpaperaccess.com/full/1371357.jpg') no-repeat center center/cover;
     color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9); /* Sombra no texto para maior contraste */
 }
 
 .hero h2 {
@@ -117,11 +121,13 @@ header {
     font-size: 24px;
     margin-bottom: 15px;
     color: #f4c400;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Sombra no texto */
 }
 
 .testimonial-text p {
     margin-bottom: 10px;
     font-size: 16px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6); /* Suave para melhorar a leitura */
 }
 
 .testimonial-image img {
@@ -141,6 +147,7 @@ header {
     font-size: 32px;
     margin-bottom: 40px;
     color: #f4c400;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8); /* Destaque adicional */
 }
 
 .services-grid {
@@ -167,10 +174,12 @@ header {
     font-size: 20px;
     color: #f4c400;
     margin-bottom: 10px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
 }
 
 .service p {
     font-size: 14px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
 }
 
 /* Footer */
@@ -191,6 +200,7 @@ footer {
     font-size: 18px;
     color: #f4c400;
     margin-bottom: 15px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8); /* Suave, mas eficaz */
 }
 
 .footer-column ul {
@@ -204,6 +214,7 @@ footer {
 .footer-column ul li a {
     font-size: 14px;
     color: #fff;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6); /* Melhora o contraste */
 }
 
 .footer-column ul li a:hover {
