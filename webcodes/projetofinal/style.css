@@ -6,51 +6,39 @@ body {
     color: #fff;
 }
 
-.navbar {
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    background-color: #fdfdfd !important;
-}
-.nav-link{
-    color: #000;
-}
-
-.card {
-    border: none;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-}
-
 .hero {
-    background-image: url("https://wallpaperaccess.com/full/1371357.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    background: url('https://via.placeholder.com/1920x1080') no-repeat center center/cover;
     height: 100vh;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     text-align: center;
-    color: #fff;
-    padding: 20px;
 }
 
-.card img {
-    height: 200px;
-    object-fit: cover;
-}
-
-footer a {
-    margin: 0 10px;
-    text-decoration: none;
-}
-
-footer a:hover {
+.hero-content .signature {
+    font-style: italic;
     color: #f1c40f;
+    font-size: 1.2em;
 }
 
-.bigode {
-    transition: transform 0.3s ease-in-out;
+.testimonials {
+    background-color: #333;
 }
 
-.bigode:hover {
-    transform: scale(1.3);
+blockquote {
+    font-size: 1.2em;
+    line-height: 1.5;
+}
+
+.services .service-card {
+    background-color: #444;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+    color: #ddd;
+}
+
+footer {
+    font-size: 0.9em;
+    text-align: center;
 }
