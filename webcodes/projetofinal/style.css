@@ -1,4 +1,4 @@
-/* Global Styles */
+/* Reset básico */
 * {
     margin: 0;
     padding: 0;
@@ -6,146 +6,242 @@
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Arial', sans-serif;
     color: #fff;
-    background-color: #000;
+    background-color: #111; /* Fundo escuro para combinar com o design */
+    line-height: 1.6;
 }
 
-/* Navigation */
-.navbar {
-    background-color: #0d0d0d;
-    padding: 1rem 2rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+a {
+    text-decoration: none;
+    color: #f4c400;
+}
+
+/* Navbar */
+header {
+    background-color: #222;
+    padding: 20px 0;
     position: fixed;
     width: 100%;
     top: 0;
     z-index: 1000;
 }
 
-.navbar .logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #fff;
-}
-
-.navbar nav ul {
-    list-style: none;
+.navbar {
     display: flex;
-    gap: 1.5rem;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
-.navbar nav ul li a {
-    text-decoration: none;
-    color: #fff;
-    font-size: 0.9rem;
+.navbar ul {
+    display: flex;
+    list-style: none;
+}
+
+.navbar ul li {
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
     transition: color 0.3s;
 }
 
-.navbar nav ul li a:hover {
-    color: #f1c40f;
+.navbar ul li a:hover {
+    color: #f4c400;
 }
 
-.appointment-btn {
-    background-color: #f1c40f;
-    color: #000;
-    padding: 0.5rem 1rem;
-    border-radius: 5px;
-    text-decoration: none;
+.appointment-btn a {
+    padding: 10px 20px;
+    border: 2px solid #f4c400;
+    color: #f4c400;
     font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
 }
 
-.appointment-btn:hover {
-    background-color: #d4a600;
+.appointment-btn a:hover {
+    background-color: #f4c400;
+    color: #111;
 }
 
 /* Hero Section */
 .hero {
-    height: 100vh;
-    background: url('https://wallpaperaccess.com/full/1371357.jpg') no-repeat center center/cover;
-    position: relative;
+    text-align: center;
+    padding: 150px 20px;
+    background: url('https://via.placeholder.com/1920x800') no-repeat center center/cover;
+    color: #fff;
+}
+
+.hero h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.hero h2 span {
+    color: #f4c400;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-style: italic;
+}
+
+/* Testimonials Section */
+.testimonials {
     display: flex;
     align-items: center;
     justify-content: center;
-    text-align: center;
+    padding: 50px 20px;
+    background-color: #1a1a1a;
 }
 
-.hero-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.6);
-}
-
-.hero-content {
-    position: relative;
-    color: #fff;
-    max-width: 800px;
-    padding: 2rem;
-}
-
-.hero-content h1 {
-    font-size: 3rem;
-    font-weight: bold;
-    margin-bottom: 1rem;
-    line-height: 1.2;
-}
-
-.hero-content .highlight {
-    color: #f1c40f;
-}
-
-.hero-content p {
-    font-size: 1rem;
-    margin-bottom: 1.5rem;
-}
-
-.hero-content .signature {
-    font-size: 1.2rem;
-    font-style: italic;
-    color: #f1c40f;
-}
-
-/* Testimonials */
-.testimonials {
-    padding: 4rem 2rem;
-    background-color: #111;
+.testimonials .content {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    max-width: 1200px;
+    gap: 30px;
 }
 
-.testimonials .testimonial {
-    max-width: 50%;
-    font-size: 1.2rem;
-    line-height: 1.6;
-    color: #ccc;
+.testimonial-text {
+    flex: 1;
 }
 
-.testimonials .testimonial h4 {
-    margin-top: 1rem;
-    font-weight: bold;
-    color: #fff;
+.testimonial-text h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #f4c400;
 }
 
-.testimonials .testimonial-img img {
-    max-width: 300px;
+.testimonial-text p {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.testimonial-image img {
+    width: 300px;
+    height: auto;
     border-radius: 10px;
-    margin-left: 2rem;
+}
+
+/* Services Section */
+.services {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #222;
+}
+
+.services h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+    color: #f4c400;
+}
+
+.services-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.service {
+    background-color: #1a1a1a;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    width: 300px;
+}
+
+.service img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.service h3 {
+    font-size: 20px;
+    color: #f4c400;
+    margin-bottom: 10px;
+}
+
+.service p {
+    font-size: 14px;
 }
 
 /* Footer */
 footer {
-    padding: 1rem 0;
-    text-align: center;
-    background-color: #0d0d0d;
-    color: #888;
-    font-size: 0.9rem;
+    background-color: #111;
+    padding: 40px 20px;
 }
 
-footer p {
-    margin: 0;
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 30px;
+}
+
+.footer-column h3 {
+    font-size: 18px;
+    color: #f4c400;
+    margin-bottom: 15px;
+}
+
+.footer-column ul {
+    list-style: none;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+    font-size: 14px;
+    color: #fff;
+}
+
+.footer-column ul li a:hover {
+    color: #f4c400;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #666;
+}
+
+footer form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+footer form input {
+    padding: 10px;
+    border: 1px solid #444;
+    border-radius: 5px;
+    background-color: #222;
+    color: #fff;
+}
+
+footer form button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f4c400;
+    color: #111;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+footer form button:hover {
+    background-color: #d4a900;
 }

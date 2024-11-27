@@ -4,20 +4,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Barberian Man</title>
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
+
+    <title>Barberian Man</title>
 </head>
 
 <body>
-    <!-- Navigation -->
-    <header class="navbar">
-        <div class="container">
-            <a href="#" class="logo">Barberian Man</a>
+    <!-- Navigation Bar -->
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <h1>Barberian Man</h1>
+            </div>
             <nav>
-                <ul class="nav-links">
+                <ul>
                     <li><a href="#">Homepage</a></li>
                     <li><a href="#">Pages</a></li>
                     <li><a href="#">Services</a></li>
@@ -26,38 +26,95 @@
                     <li><a href="#">Contacts</a></li>
                 </ul>
             </nav>
-            <a href="#" class="appointment-btn">Appointment</a>
+            <div class="appointment-btn">
+                <a href="#">Appointment</a>
+            </div>
         </div>
     </header>
 
     <!-- Hero Section -->
     <section class="hero">
-        <div class="hero-overlay"></div>
-        <div class="hero-content">
-            <h1>Welcome To <span class="highlight">Barberian Man</span></h1>
-            <p>Our Barber Shop always offers professional quality and is ready to deal with your highest expectations.</p>
-            <p class="signature">S. Knight</p>
-        </div>
+        <h2>Welcome To <span>Barberian Man</span></h2>
+        <p>Our Barber Shop always offers professional quality and is ready to deal with your highest expectations.</p>
+        <p>S. Knight</p>
     </section>
 
     <!-- Testimonials Section -->
     <section class="testimonials">
-        <div class="container">
-            <div class="testimonial">
+        <div class="content">
+            <div class="testimonial-text">
+                <h3>Testimonials</h3>
                 <p>"Capicola turkey jowl, sitloin tri-tip pastrami pig shot this tenderloin jerky burgdoggen."</p>
-                <h4>Charles Walker</h4>
-                <span>Client/Model</span>
+                <p><strong>Charles Walker</strong></p>
+                <p>Client/Model</p>
             </div>
-            <div class="testimonial-img">
-                <img src="babershop.jpg" alt="Testimonial Image">
+            <div class="testimonial-image">
+                <img src="https://via.placeholder.com/300" alt="Testimonial">
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services">
+        <h2>Our Services</h2>
+        <div class="services-grid">
+            <div class="service">
+                <img src="https://via.placeholder.com/200" alt="Trimming">
+                <h3>Trimming</h3>
+                <p>Check out our professional skin care services that will help to complete your look.</p>
+            </div>
+            <div class="service">
+                <img src="https://via.placeholder.com/200" alt="Hairstyle">
+                <h3>Hairstyle</h3>
+                <p>Our master barber is your personal stylist. Our premium barber haircut service...</p>
+            </div>
+            <div class="service">
+                <img src="https://via.placeholder.com/200" alt="Shaving">
+                <h3>Shaving</h3>
+                <p>Here you can enjoy getting your favorite haircut, a classic shave, or an old-school shave.</p>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
     <footer>
-        <div class="container">
-            <p>&copy; 2024 Barberian Man. All rights reserved.</p>
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>Navigation</h3>
+                <ul>
+                    <li><a href="#">About Barber Shop</a></li>
+                    <li><a href="#">Our Gallery</a></li>
+                    <li><a href="#">Our Latest News</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Our Contacts</h3>
+                <p>427 Ward Divide Suite 42L</p>
+                <p>New York, New York USA</p>
+                <p>Tel: 3 (800) 462 4986</p>
+                <p>Email: <a href="mailto:barber_man@example.com">barber_man@example.com</a></p>
+            </div>
+            <div class="footer-column">
+                <h3>All Services</h3>
+                <ul>
+                    <li>Hairstyle</li>
+                    <li>Trimming</li>
+                    <li>Shaving</li>
+                    <li>Skin Care</li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Newsletter</h3>
+                <p>We promise not to spam!</p>
+                <form>
+                    <input type="email" placeholder="Email Address">
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; Copyright 2018 All Rights Reserved</p>
         </div>
     </footer>
 </body>
