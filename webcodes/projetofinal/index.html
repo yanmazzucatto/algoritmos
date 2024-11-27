@@ -5,100 +5,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Barberian Man</title>
-    <!-- Bootstrap 5 CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-    <!-- Font Awesome for icons -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <!-- Header -->
-    <header class="hero text-white text-center">
-        <nav class="navbar navbar-dark navbar-expand-lg fixed-top">
-            <div class="container">
-                <a class="navbar-brand" href="#">Barberian Man</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item"><a class="nav-link" href="#">Homepage</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Pages</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Gallery</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
-                    </ul>
-                    <a href="#" class="btn btn-outline-light ms-3">Appointment</a>
-                </div>
-            </div>
-        </nav>
-        <div class="container hero-content">
-            <h1 class="display-4">Welcome To Barberian Man</h1>
-            <p class="lead">Our Barber Shop always offers professional quality and is ready to deal with your highest expectations.</p>
-            <p class="signature">S. Knight</p>
+    <!-- Navigation -->
+    <header class="navbar">
+        <div class="container">
+            <a href="#" class="logo">Barberian Man</a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#">Homepage</a></li>
+                    <li><a href="#">Pages</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="#">News</a></li>
+                    <li><a href="#">Contacts</a></li>
+                </ul>
+            </nav>
+            <a href="#" class="appointment-btn">Appointment</a>
         </div>
     </header>
 
-    <!-- Testimonials Section -->
-    <section class="testimonials py-5 text-white">
-        <div class="container d-flex flex-wrap align-items-center">
-            <div class="col-md-6">
-                <blockquote>
-                    <p>"Capicola turkey jowl, pastrami pig shot this tenderloin jerky burgdoggen."</p>
-                    <footer class="text-muted">— Charles Walker, Client/Model</footer>
-                </blockquote>
-            </div>
-            <div class="col-md-6">
-                <img src="barber-shop.jpg" alt="Client photo" class="img-fluid rounded">
-            </div>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>Welcome To <span class="highlight">Barberian Man</span></h1>
+            <p>Our Barber Shop always offers professional quality and is ready to deal with your highest expectations.</p>
+            <p class="signature">S. Knight</p>
         </div>
     </section>
 
-    <!-- Services Section -->
-    <section class="services text-center py-5">
+    <!-- Testimonials Section -->
+    <section class="testimonials">
         <div class="container">
-            <h2>Our Services</h2>
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="service-card">
-                        <img src="barber-shop.jpg" alt="Trimming" class="img-fluid">
-                        <h5>Trimming</h5>
-                        <p>Professional skin care services that will complete your look.</p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="service-card">
-                        <img src="barber-shop.jpg" alt="Hairstyle" class="img-fluid">
-                        <h5>Hairstyle</h5>
-                        <p>Our premium barber haircut service for your style.</p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="service-card">
-                        <img src="babershop.jpg" alt="Shaving" class="img-fluid">
-                        <h5>Shaving</h5>
-                        <p>Classic shaves with a professional touch.</p>
-                    </div>
-                </div>
+            <div class="testimonial">
+                <p>"Capicola turkey jowl, sitloin tri-tip pastrami pig shot this tenderloin jerky burgdoggen."</p>
+                <h4>Charles Walker</h4>
+                <span>Client/Model</span>
+            </div>
+            <div class="testimonial-img">
+                <img src="babershop.jpg" alt="Testimonial Image">
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-dark text-white py-4">
-        <div class="container text-center">
-            <p>&copy; 2024 Barberian Man. All Rights Reserved.</p>
-            <p>Follow us: 
-                <a href="#" class="text-white"><i class="fab fa-facebook-f"></i></a> 
-                <a href="#" class="text-white"><i class="fab fa-twitter"></i></a> 
-                <a href="#" class="text-white"><i class="fab fa-instagram"></i></a>
-            </p>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Barberian Man. All rights reserved.</p>
         </div>
     </footer>
-
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
