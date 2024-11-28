@@ -30,7 +30,8 @@ header {
 }
 header.scrolled {
     background-color: rgba(34, 34, 34, 0.1) ;
-    
+    backdrop-filter: blur(10px); /* Adiciona o efeito de desfoque */
+    transition: background-color 0.3s ease, backdrop-filter 0.3s ease; /* Transição suave */
     transition: background-color 0.3s ease; /* Animação suave */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra mais leve */
 }
@@ -281,9 +282,11 @@ header.scrolled .navbar ul li a:hover {
   }
   #prev-arrow{
     transform: rotate(270deg);
+    margin-top: -30px;
   }
   #next-arrow{
     transform: rotate(-270deg);
+    margin-top: -30px;
   }
   .carousel-control.prev {
     left: 10px;
