@@ -38,11 +38,9 @@ dots.forEach((dot) => {
 
     setInterval(() => {
         nextBtn.click();
-    }, 7000); // Troca a cada 3 segundos
+    }, 7000); //rodar imagem em 7 segundos
     
 
-
- 
   window.addEventListener('scroll', function () {
     const header = document.querySelector('header');
     if (window.scrollY > 600) {
