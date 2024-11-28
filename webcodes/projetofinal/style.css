@@ -19,7 +19,7 @@ a {
 
 /* Navbar */
 header {
-    background-color: #222;
+    background-color: #000000;
     padding: 0px 0;
     position: fixed;
     width: 100%;
@@ -59,9 +59,13 @@ header {
 .navbar ul li a:hover {
     color: #fff;
 }
-#title-margin{
+#hero-title{
     margin-top: 130px;
     text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.8); 
+}
+#hero-text{
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.9); 
+    
 }
 #logotipo{
     height: 100px;
