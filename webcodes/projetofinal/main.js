@@ -38,5 +38,5 @@ dots.forEach((dot) => {
 
     setInterval(() => {
         nextBtn.click();
-    }, 3000); // Troca a cada 3 segundos
+    }, 7000); // Troca a cada 3 segundos
     

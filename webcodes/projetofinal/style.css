@@ -194,7 +194,7 @@ header {
 
 .carousel {
     position: relative;
-    width: 80%;
+    width: 500px;
     margin: 0 auto;
     overflow: hidden;
     border: 2px solid #ccc;
