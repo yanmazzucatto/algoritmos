@@ -28,6 +28,21 @@ header {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.8); /* Adiciona um destaque para a barra */
     height: 100px;
 }
+header.scrolled {
+    background-color: rgba(34, 34, 34, 0.5) ;
+    
+    transition: background-color 0.3s ease; /* Animação suave */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra mais leve */
+}
+
+header.scrolled .navbar ul li a {
+    color: #fefefe; /* Muda a cor dos links para combinar com o fundo branco */
+    text-shadow: none; /* Remove a sombra do texto */
+}
+
+header.scrolled .navbar ul li a:hover {
+    color: #f4c400; /* Mantém o hover em destaque */
+}
 
 .navbar {
     display: flex;

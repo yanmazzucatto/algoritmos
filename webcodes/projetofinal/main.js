@@ -40,3 +40,15 @@ dots.forEach((dot) => {
         nextBtn.click();
     }, 7000); // Troca a cada 3 segundos
     
+
+
+ 
+  window.addEventListener('scroll', function () {
+    const header = document.querySelector('header');
+    if (window.scrollY > 600) {
+      header.classList.add('scrolled');
+    } else {
+      header.classList.remove('scrolled');
+    }
+  });
+
