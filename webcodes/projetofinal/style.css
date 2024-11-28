@@ -166,6 +166,7 @@ header.scrolled .navbar ul li a:hover {
     width: 300px;
     height: auto;
     border-radius: 10px;
+    border: solid 2px #f4c400;
 }
 
 /* Services Section */
