@@ -131,7 +131,10 @@ header.scrolled .navbar ul li a:hover {
     margin-bottom: 10px;
     font-style: italic;
 }
-
+svg{
+    margin-bottom: -2px;
+    padding-left: 3px;
+}
 /* Testimonials Section */
 .testimonials {
     display: flex;
