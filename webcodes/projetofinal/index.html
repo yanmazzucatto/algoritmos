@@ -5,12 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Font Awesome para os ícones -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-
-
     <title>Barberian Man</title>
 </head>
 
@@ -140,45 +134,44 @@
     </section>
         
     <!-- Footer -->
-    <footer class="bg-dark text-white pt-5 pb-3">
-        <div class="container">
-            <div class="row">
-                <!-- Coluna de Contato -->
-                <div class="col-md-6">
-                    <h4 class="text-warning">Entre em contato</h4>
-                    <p><i class="fas fa-map-marker-alt"></i> Rua Exemplo, 123 - Centro, Cidade</p>
-                    <p><i class="fas fa-phone"></i> (11) 1234-5678</p>
-                    <p><i class="fas fa-envelope"></i> contato@exemplo.com</p>
-                </div>
-                <!-- Coluna de Formulário -->
-                <div class="col-md-6">
-                    <h4 class="text-warning">Envie uma mensagem</h4>
-                    <form>
-                        <div class="mb-3">
-                            <label for="name" class="form-label">Nome</label>
-                            <input type="text" class="form-control" id="name" placeholder="Seu nome">
-                        </div>
-                        <div class="mb-3">
-                            <label for="email" class="form-label">Email</label>
-                            <input type="email" class="form-control" id="email" placeholder="Seu email">
-                        </div>
-                        <div class="mb-3">
-                            <label for="message" class="form-label">Mensagem</label>
-                            <textarea class="form-control" id="message" rows="3" placeholder="Escreva sua mensagem"></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-warning">Enviar</button>
-                    </form>
-                </div>
+    <footer id="contato">
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>Navigation</h3>
+                <ul>
+                    <li><a href="#">About Barber Shop</a></li>
+                    <li><a href="#">Our Gallery</a></li>
+                    <li><a href="#">Our Latest News</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
             </div>
-            <hr class="border-light">
-            <!-- Ícones de Redes Sociais -->
-            <div class="text-center">
-                <a href="https://facebook.com" class="text-white mx-2" target="_blank"><i class="fab fa-facebook fa-2x"></i></a>
-                <a href="https://instagram.com" class="text-white mx-2" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
-                <a href="https://twitter.com" class="text-white mx-2" target="_blank"><i class="fab fa-twitter fa-2x"></i></a>
-                <a href="https://linkedin.com" class="text-white mx-2" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
+            <div class="footer-column">
+                <h3>Our Contacts</h3>
+                <p>427 Ward Divide Suite 42L</p>
+                <p>New York, New York USA</p>
+                <p>Tel: 3 (800) 462 4986</p>
+                <p>Email: <a href="mailto:barber_man@example.com">barber_man@example.com</a></p>
             </div>
-            <p class="text-center mt-3">© 2024 Sua Empresa. Todos os direitos reservados.</p>
+            <div class="footer-column">
+                <h3>All Services</h3>
+                <ul>
+                    <li>Hairstyle</li>
+                    <li>Trimming</li>
+                    <li>Shaving</li>
+                    <li>Skin Care</li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Newsletter</h3>
+                <p>We promise not to spam!</p>
+                <form>
+                    <input type="email" placeholder="Email Address">
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; Copyright 2018 All Rights Reserved</p>
         </div>
     </footer>
     <script src="main.js"></script>
