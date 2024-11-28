@@ -88,7 +88,8 @@ header {
     background-attachment: fixed; 
     object-fit: contain;
     background-position:center right;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9); /* Sombra no texto para maior contraste */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9); 
+    height: 100vh;
 }
 
 .hero h2 {
