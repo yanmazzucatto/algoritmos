@@ -106,13 +106,14 @@ header.scrolled .navbar ul li a:hover {
 .hero {
     text-align: center;
     padding: 150px 20px;
-    background: url('freepik__candid-image-photography-natural-textures-highly-r__71885.jpeg');
+    background: url('pngtree-some-pictures-of-an-antique-barber-shop-picture-image_3379234.jpg');
     color: #fff;
     background-attachment: fixed; 
-    object-fit: contain;
+    object-fit: cover;
     background-position:center right;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9); 
     height: 100vh;
+    background-repeat: no-repeat;
 }
 
 .hero h2 {
