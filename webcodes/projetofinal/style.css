@@ -200,6 +200,7 @@ header {
     border: 2px solid #ccc;
     border-radius: 10px;
     background: #f8f8f8;
+    margin-top: 40px;
   }
   
   .carousel-inner {
@@ -240,13 +241,14 @@ header {
   .stars {
     color: #FFD700; /* Cor das estrelas */
     font-size: 1.5rem;
+    margin-bottom: 20px;
   }
   
   .carousel-control {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.4);
     color: #fff;
     border: none;
     font-size: 2rem;
@@ -254,7 +256,12 @@ header {
     padding: 10px;
     z-index: 10;
   }
-  
+  #prev-arrow{
+    transform: rotate(270deg);
+  }
+  #next-arrow{
+    transform: rotate(-270deg);
+  }
   .carousel-control.prev {
     left: 10px;
   }
