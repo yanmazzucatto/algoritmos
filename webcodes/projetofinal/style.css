@@ -168,8 +168,8 @@ svg{
 }
 
 .testimonial-image img {
-    width: 300px;
-    height: auto;
+    width: auto;
+    height: 300px;
     border-radius: 10px;
     border: solid 2px #f4c400;
 }
