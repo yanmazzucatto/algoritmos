@@ -270,6 +270,11 @@ header {
     bottom: 10px;
     width: 100%;
   }
+  .carousel-control img {
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+  }
   
   .dot {
     height: 10px;
