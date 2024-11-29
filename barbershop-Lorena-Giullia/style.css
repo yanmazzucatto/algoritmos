@@ -21,7 +21,7 @@
         border: 5px solid #f1c40f;
     }
     .about-section{
-        background-color: rgb(36, 36, 36);
+        background-color: rgb(36, 36, 36) !important;
     }
     .courses-section .card {
         border-radius: 10px;
@@ -30,4 +30,6 @@
     .contact-section form input {
         border-radius: 5px;
     }
-    
+    .col-md-6{
+        color: whitesmoke;
+    }
