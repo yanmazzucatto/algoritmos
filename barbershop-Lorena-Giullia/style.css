@@ -49,3 +49,6 @@
     .white-text{
         color: white;
     }
+    .btn .btn-outline-dark{
+        z-index: 95 !important;
+    }
