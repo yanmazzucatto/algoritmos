@@ -35,8 +35,11 @@
         font-family: 'Courier New', Courier, monospace;
     }
     .card-body{
-        height: 25vh;
+        height: 29vh;
         align-content: space-between;
         display: flex;
         flex-direction: column;
+        background-color: rgb(241, 241, 241) !important;
+        border: solid 3px #f1c40f;
+        border-radius: 20px;
     }
