@@ -9,6 +9,9 @@ header {
     display: flex;
     animation: fadeIn 2s ease-in-out;
 }
+.logo-section{
+    
+}
 
 @keyframes fadeIn {
     from {
