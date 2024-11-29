@@ -20,7 +20,9 @@
     .about-section img {
         border: 5px solid #f1c40f;
     }
-    
+    .about-section{
+        background-color: rgb(36, 36, 36);
+    }
     .courses-section .card {
         border-radius: 10px;
     }
