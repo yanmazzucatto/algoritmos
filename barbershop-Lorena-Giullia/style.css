@@ -5,8 +5,13 @@
     
     header {
         background: url('https://via.placeholder.com/1500x600') no-repeat center center/cover;
+        display: flex;
     }
-    
+    .logo-section{
+        display: flex;
+        height: 100px;
+        width: auto;
+    }
     header h1 {
         font-size: 3rem;
         font-weight: bold;
