@@ -1,66 +1,55 @@
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    scroll-behavior: smooth;
-}
-
-header {
-    background: url('img/banner.jpg') no-repeat center bottom/cover;
-    display: flex;
-    animation: fadeIn 2s ease-in-out;
-}
-.logo-section{
+    body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+    }
     
-}
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
+    header {
+        background: url('img/banner.jpg') no-repeat center bottom/cover;
+        display: flex;
     }
-    to {
-        opacity: 1;
+    .logo-section{
+        display: flex;
+        height: 135px;
+        width: auto;
     }
-}
-
-.about-section img {
-    border: 5px solid #f1c40f;
-    transition: transform 0.3s ease-in-out;
-}
-
-.about-section img:hover {
-    transform: scale(1.05);
-}
-
-.card-body {
-    background-color: rgb(0, 0, 0) !important;
-    border: solid 3px #f1c40f;
-    border-radius: 20px;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.card-body:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 8px 15px rgba(241, 196, 15, 0.5);
-}
-
-.testimonials-section .card {
-    transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.testimonials-section .card:hover {
-    transform: scale(1.05);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
-}
-
-h5 {
-    color: white;
-}
-
-.btn-outline-dark {
-    border: #f1c40f solid 2px !important;
-    color: #f1c40f !important;
-}
+    header h1 {
+        font-size: 3rem;
+        font-weight: bold;
+    }
+    
+    .about-section img {
+        border: 5px solid #f1c40f;
+    }
+    .about-section{
+        background-color: rgb(36, 36, 36) !important;
+    }
+    .courses-section .card {
+        border-radius: 10px;
+    }
+    
+    .contact-section form input {
+        border-radius: 5px;
+    }
+    .col-md-6{
+        color: whitesmoke;
+        font-family: 'Courier New', Courier, monospace;
+    }
+    .card-body{
+        height: 29vh;
+        align-content: space-between;
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(0, 0, 0) !important;
+        border: solid 3px #f1c40f;
+        border-radius: 20px;
+    }
+    h5{
+        color: white;
+    }
+    .white-text{
+        color: white;
+    }
+    .btn-outline-dark{
+        border: #f1c40f solid 2px !important;
+        color: #f1c40f !important;
+    }
