@@ -34,3 +34,9 @@
         color: whitesmoke;
         font-family: 'Courier New', Courier, monospace;
     }
+    .card-body{
+        height: 25vh;
+        align-content: space-between;
+        display: flex;
+        flex-direction: column;
+    }
