@@ -42,5 +42,7 @@
         background-color: rgb(0, 0, 0) !important;
         border: solid 3px #f1c40f;
         border-radius: 20px;
-        font: white;
+    }
+    h5{
+        color: white;
     }
