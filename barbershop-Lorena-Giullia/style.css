@@ -264,11 +264,7 @@ h2 {
     overflow: hidden;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     text-align: center;
-
-}
-.img-service{
-    height: 10vh;   
-    width: auto;
+    object-fit: cover;
 }
 
 .service-card:hover {
@@ -278,7 +274,7 @@ h2 {
 
 .service-card img {
     width: 100%;
-    height: auto;
+    height: 50vh;
     display: block;
 }
 
