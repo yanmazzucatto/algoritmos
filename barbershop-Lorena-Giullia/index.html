@@ -1,126 +1,82 @@
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Barber Website</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
+</head>
+<body>
     <!-- Header Section -->
-    <header class="text-center text-light py-5 bg-dark">
-        <div class="container">
-            <div class="logo-section">
-                <img src="img/logotipo.png" alt="" srcset="">    
-            </div>
-        <h1 class="display-4">Chousen's Barber</h1>
-        <p class="white-text">O melhor serviço da Cidade!</p>
-        <div class="d-flex justify-content-center gap-3">
-            <a href="#" class="btn btn-outline-light">Agende seu Corte</a>
-        </div>
-        </div>
+    <header>
+        <img src="img/logotipo.png" alt="Logo">
+        <h1>Chousen's Barber</h1>
+        <p>O melhor serviço da Cidade!</p>
+        <a href="#" class="btn">Agende seu Corte</a>
     </header>
 
     <!-- About Section -->
-    <section class="about-section py-5 bg-light">
+    <section class="about-section bg-dark">
         <div class="container">
-        <div class="row">
-            <div class="col-md-6">
-            <img src="img/CorteCabelo.jpg" alt="Barber" class="img-fluid rounded">
-            </div>
-            <div class="col-md-6 ">
             <h2>Sobre nós</h2>
-            <p class="white-text">Bem-vindo à Chousen Barber's, um espaço onde tradição e modernidade se encontram para oferecer o melhor cuidado masculino.
-                Nosso compromisso é proporcionar uma experiência única, combinando cortes de cabelo e barba de alta qualidade com um ambiente acolhedor e descontraído. Com profissionais experientes e apaixonados pelo que fazem, buscamos realçar o seu estilo e confiança. Aqui, cada cliente é tratado como prioridade, com atenção aos detalhes e um atendimento personalizado.
-                Venha nos conhecer e viva a verdadeira experiência de uma barbearia clássica!</p>
-            <a href="#" class="btn btn-warning">Read More</a>
+            <div style="display: flex; gap: 20px;">
+                <div style="flex: 1;">
+                    <img src="img/CorteCabelo.jpg" alt="Barber">
+                </div>
+                <div style="flex: 1;">
+                    <p>Bem-vindo à Chousen Barber's, um espaço onde tradição e modernidade se encontram para oferecer o melhor cuidado masculino.</p>
+                    <a href="#" class="btn-warning">Read More</a>
+                </div>
             </div>
-        </div>
         </div>
     </section>
 
     <!-- Courses Section -->
-    <section class="courses-section text-center py-5 bg-dark text-light">
-        <div class="container">
+    <section class="courses-section bg-light text-center">
         <h2>Nossos Serviços</h2>
-        <div class="row">
-            <div class="col-md-3">
-            <div class="card bg-warning text-dark">
-                <div class="card-body">
+        <div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center;">
+            <div class="card">
                 <h5>Corte de Cabelo</h5>
-                <p class="white-text">Corte profissional, adaptado ao seu estilo e personalidade." -<br> R$ 50,00</p>
-                <a href="#" class="btn btn-outline-dark">Agendar Corte</a>
-                </div>
+                <p>Corte profissional, adaptado ao seu estilo e personalidade - R$ 50,00</p>
+                <a href="#" class="btn-outline-dark">Agendar Corte</a>
             </div>
-            </div>
-            <div class="col-md-3">
-            <div class="card bg-warning text-dark">
-                <div class="card-body">
+            <div class="card">
                 <h5>Barba Completa</h5>
-                <p class="white-text">Design e modelagem com acabamento à navalha para um visual impecável." - R$ 40,00</p>
-                <a href="#" class="btn btn-outline-dark">Agendar Corte</a>
-                </div>
+                <p>Design e modelagem com acabamento à navalha - R$ 40,00</p>
+                <a href="#" class="btn-outline-dark">Agendar Corte</a>
             </div>
-            </div>
-            <div class="col-md-3">
-            <div class="card bg-warning text-dark">
-                <div class="card-body">
+            <div class="card">
                 <h5>Hidratação Capilar</h5>
-                <p class="white-text">"Tratamento profundo para cabelos mais macios e saudáveis." -<br>R$ 30,00</p>
-                <a href="#" class="btn btn-outline-dark">Agendar Hidratação</a>
-                </div>
+                <p>Tratamento profundo para cabelos mais macios e saudáveis - R$ 30,00</p>
+                <a href="#" class="btn-outline-dark">Agendar Hidratação</a>
             </div>
-            </div>
-            <div class="col-md-3">
-            <div class="card bg-warning text-dark">
-                <div class="card-body">
+            <div class="card">
                 <h5>Sobrancelha Masculina</h5>
-                <p class="white-text">"Correção e design para uma aparência natural e harmoniosa." - R$ 20,00</p>
-                <a href="#" class="btn btn-outline-dark">Agendar Corte</a>
-                </div>
+                <p>Correção e design para uma aparência natural - R$ 20,00</p>
+                <a href="#" class="btn-outline-dark">Agendar Corte</a>
             </div>
-            </div>
-        </div>
         </div>
     </section>
 
     <!-- Portfolio Section -->
-    <section class="portfolio-section py-5 bg-light">
-        <div class="container">
-        <h2 class="text-center mb-4"> Portfolio</h2>
-        <div class="row g-3">
-            <div class="col-md-3"><img src="img/Barbeando.jpg" alt="Portfolio" class="img-fluid rounded"></div>
-            <div class="col-md-3"><img src="img/CorteCabelo.jpg" alt="Portfolio" class="img-fluid rounded"></div>
-            <div class="col-md-3"><img src="img/Barbeando.jpg" alt="Portfolio" class="img-fluid rounded"></div>
-            <div class="col-md-3"><img src="img/CorteCabelo.jpg" alt="Portfolio" class="img-fluid rounded"></div>
-        </div>
+    <section class="portfolio-section bg-dark">
+        <h2 class="text-center">Portfolio</h2>
+        <div class="row">
+            <div class="col-md-3"><img src="img/Barbeando.jpg" alt="Portfolio"></div>
+            <div class="col-md-3"><img src="img/CorteCabelo.jpg" alt="Portfolio"></div>
+            <div class="col-md-3"><img src="img/Barbeando.jpg" alt="Portfolio"></div>
+            <div class="col-md-3"><img src="img/CorteCabelo.jpg" alt="Portfolio"></div>
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section class="contact-section py-5 bg-dark text-light">
-        <div class="container">
+    <section class="contact-section bg-light">
         <h2 class="text-center">Get in Touch</h2>
-        <form class="mt-4">
-            <div class="row g-3">
-            <div class="col-md-4">
-                <input type="text" class="form-control" placeholder="Name">
-            </div>
-            <div class="col-md-4">
-                <input type="email" class="form-control" placeholder="Email">
-            </div>
-            <div class="col-md-4">
-                <input type="tel" class="form-control" placeholder="Phone">
-            </div>
-            </div>
-            <div class="mt-3 text-center">
-            <button type="submit" class="btn btn-warning">Submit</button>
-            </div>
+        <form>
+            <input type="text" placeholder="Name">
+            <input type="email" placeholder="Email">
+            <input type="tel" placeholder="Phone">
+            <button type="submit">Submit</button>
         </form>
-        </div>
     </section>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-    </body>
-    </html>
+</body>
+</html>
