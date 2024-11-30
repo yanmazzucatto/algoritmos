@@ -320,6 +320,83 @@ h2 {
         max-width: 100%;
     }
 }
+/* Estilo para a seção 'Sobre Nós' */
+#sobre-nos {
+    background: #f4f4f4; /* Fundo claro */
+    padding: 60px 20px;
+    text-align: center;
+    position: relative;
+}
+
+/* Estilo para o título */
+#sobre-nos h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: 600;
+    animation: fadeInUp 1s ease-out; /* Animação do título */
+}
+
+/* Estilo do texto */
+#sobre-nos p {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.8;
+    max-width: 800px;
+    margin: 0 auto;
+    animation: fadeInUp 1s ease-out 0.5s; /* Animação do texto */
+}
+
+/* Animação de FadeIn para título e texto */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Estilo do box de destaque */
+#sobre-nos .highlight-box {
+    background: #f4c40f; /* Cor de destaque */
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: 40px auto;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    animation: zoomIn 1s ease-out; /* Animação para o box de destaque */
+}
+
+/* Animação de zoomIn para a box */
+@keyframes zoomIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Estilo do texto dentro da box */
+#sobre-nos .highlight-box h3 {
+    font-size: 1.8rem;
+    color: #fff;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+#sobre-nos .highlight-box p {
+    font-size: 1rem;
+    color: #fff;
+    line-height: 1.6;
+}
+
 /* social medias*/
 .row-medias{
     display: flex;
