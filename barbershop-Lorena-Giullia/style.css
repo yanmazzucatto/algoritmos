@@ -321,7 +321,12 @@ h2 {
         max-width: 100%;
     }
 }
-
+/* social medias*/
+.row-medias{
+    display: flexbox;
+    flex-direction: row;
+    
+}
 /* Footer */
 footer {
     background: #111;
