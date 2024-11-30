@@ -323,8 +323,9 @@ h2 {
 }
 /* social medias*/
 .row-medias{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     gap: 30px;
     margin-top: 30px;
 }
