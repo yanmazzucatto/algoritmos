@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="style.css">
     <!-- SwiperJS CSS -->
-<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
 
 </head>
 <body>
@@ -41,23 +42,51 @@
     </section>
 
     <main>
-        <!-- Testimonials Section -->
         <section id="testimonials" class="section-dark">
             <div class="container">
                 <h2>Testimonials</h2>
-                <div class="testimonial-content">
-                    <div class="testimonial-text">
-                        <p>
-                            "Capicola turkey jowl, sitloin tri-tip pastrami pig short ribs tenderloin jerky burgdoggen."
-                        </p>
-                        <p class="author">— Charles Walker, Client/Model</p>
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <!-- Slide 1 -->
+                        <div class="swiper-slide">
+                            <div class="testimonial-card">
+                                <img src="img/Barbeando.jpg" alt="Client 1">
+                                <p>
+                                    "This barbershop gave me the best haircut I've ever had. Truly professional!"
+                                </p>
+                                <p class="author">— John Smith</p>
+                            </div>
+                        </div>
+                        <!-- Slide 2 -->
+                        <div class="swiper-slide">
+                            <div class="testimonial-card">
+                                <img src="img/CorteCabelo.jpg" alt="Client 2">
+                                <p>
+                                    "Amazing experience! The staff is friendly, and the quality is unmatched."
+                                </p>
+                                <p class="author">— Emma Johnson</p>
+                            </div>
+                        </div>
+                        <!-- Slide 3 -->
+                        <div class="swiper-slide">
+                            <div class="testimonial-card">
+                                <img src="img/client3.jpg" alt="Client 3">
+                                <p>
+                                    "The atmosphere is fantastic, and the barbers are truly skilled."
+                                </p>
+                                <p class="author">— Liam Brown</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="testimonial-image">
-                        <img src="img/Barbeando.jpg" alt="Client Testimonial">
-                    </div>
+                    <!-- Navigation Buttons -->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <!-- Pagination -->
+                    <div class="swiper-pagination"></div>
                 </div>
             </div>
         </section>
+        
     
         <!-- Services Section -->
         <section id="services" class="section-light">
@@ -112,25 +141,30 @@
         <p>© 2024 Barberian Man | All Rights Reserved</p>
     </footer>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-<script>
-    const swiper = new Swiper('.swiper', {
-        loop: true,
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-        },
-        pagination: {
-            el: '.swiper-pagination',
-            clickable: true,
-        },
-        autoplay: {
-            delay: 5000,
-            disableOnInteraction: false,
-        },
-        slidesPerView: 1,
-        spaceBetween: 30,
-    });
-</script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            loop: true,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            autoplay: {
+                delay: 3000, // Troca automática a cada 3 segundos
+                disableOnInteraction: false,
+            },
+            slidesPerView: 1,
+            spaceBetween: 10,
+            effect: 'fade', // Animação suave no fade
+            fadeEffect: {
+                crossFade: true
+            }
+        });
+    </script>
+    
 
 </body>
 </html>

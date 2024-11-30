@@ -117,7 +117,6 @@ h2 {
 }
 
 /* Testimonials Section */
-/* Testimonials Section */
 #testimonials {
     text-align: center;
     padding: 60px 0;
@@ -126,27 +125,34 @@ h2 {
 }
 
 .testimonial-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     background: rgba(255, 255, 255, 0.1);
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    max-width: 400px;
+    max-width: 500px;
+    height: 500px;
     margin: 0 auto;
     text-align: center;
 }
 
 .testimonial-card img {
-    width: 80px;
-    height: 80px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
     margin-bottom: 20px;
     border: 3px solid #f4c40f;
+    object-fit: cover; /* Garante que as imagens fiquem bem ajustadas */
 }
 
 .testimonial-card p {
     font-size: 1rem;
     line-height: 1.6;
     margin-bottom: 10px;
+    color: #f2f2f2;
 }
 
 .testimonial-card .author {
@@ -155,8 +161,13 @@ h2 {
     color: #f4c40f;
 }
 
+/* Swiper Container */
 .swiper {
     margin-top: 30px;
+    width: 100%;
+    max-width: 500px; /* Limite máximo de largura */
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .swiper-pagination {
