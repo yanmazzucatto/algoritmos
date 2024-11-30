@@ -94,7 +94,7 @@ header {
     letter-spacing: 1px; /* Aumento no espaçamento das letras */
     position: relative;
     z-index: 2;
-    text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5); /* Sombra para destacar o texto */
+    text-shadow: 8px 8px 14px rgba(0, 0, 0, 0.5); /* Sombra para destacar o texto */
     line-height: 1.2;
     padding: 20px;
 }
@@ -105,7 +105,7 @@ header {
     font-weight: 300; 
     margin-top: 20px;
     color: #fff; 
-    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8);
+    text-shadow: 8px 8px 16px rgba(0, 0, 0, 0.8);
     line-height: 1.6;
     max-width: 80%;
     margin: auto;
