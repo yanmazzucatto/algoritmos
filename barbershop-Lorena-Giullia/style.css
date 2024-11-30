@@ -339,6 +339,25 @@ h2 {
     letter-spacing: 1px;
     
 }
+.row-medias svg{ 
+    width: 55px;
+    height: auto;
+}
+
+#instagram{
+    color: plum;
+    width: 99px;
+}
+
+#facebook{
+    color: rgb(0, 110, 255);
+}
+#twitter{
+    color: lightskyblue;
+}
+#youtube{
+    color: red;
+}
 /* Footer */
 footer {
     background: #111;
