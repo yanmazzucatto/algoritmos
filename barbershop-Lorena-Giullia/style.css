@@ -20,13 +20,13 @@ body {
 
 /* Header Section */
 header {
-    background: #111; /* Fundo preto semelhante ao site fornecido */
+    background: #111; 
     color: #fff;
     padding: 20px 0;
     position: sticky;
     top: 0;
     z-index: 1000;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3); /* Adiciona leve sombra */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3); 
     height: 110px;
 }
 
@@ -40,7 +40,7 @@ header {
 }
 
 .logo img {
-    height: 90px; /* Tamanho ajustado para melhor proporção */
+    height: 90px; 
     border-radius: 60px;
     margin-top: -10px;
 }
@@ -63,7 +63,7 @@ header {
 }
 
 .nav-links a:hover {
-    color: #f4c40f; /* Destaque dourado ao passar o mouse */
+    color: #f4c40f; 
     font-size: 17px;
     transform: scale(1.2);
 }
@@ -89,10 +89,10 @@ header {
     background-repeat: repeat;
     background-position: center left;
     height: 60vh;
-    z-index: 1; /* Coloca a imagem no fundo */
+    z-index: 1;
 }
 
-/* Camada de filtro preto */
+
 .hero::before {
     content: '';
     position: absolute;
@@ -100,21 +100,21 @@ header {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.3); /* Filtro preto com opacidade de 40% */
-    z-index: -1; /* Coloca o filtro abaixo do conteúdo */
+    background: rgba(0, 0, 0, 0.3); 
+    z-index: -1; 
 }
 
 /* Texto principal da Hero Section */
 .hero-text {
     text-align: center;
     color: #fff;
-    font-size: 3rem; /* Tamanho maior para o texto principal */
+    font-size: 3rem; 
     font-weight: bold;
     text-transform: uppercase;
-    letter-spacing: 1px; /* Aumento no espaçamento das letras */
+    letter-spacing: 1px; 
     position: relative;
     z-index: 2;
-    text-shadow: 8px 8px 14px rgba(0, 0, 0, 0.5); /* Sombra para destacar o texto */
+    text-shadow: 8px 8px 14px rgba(0, 0, 0, 0.5); 
     line-height: 1.2;
     padding: 20px;
 }
@@ -146,13 +146,13 @@ header {
 /* Responsividade para Header */
 @media screen and (max-width: 768px) {
     .nav-links {
-        display: none; /* Esconde o menu em telas menores */
+        display: none; 
     }
 
     .btn-appointment {
         font-size: 0.8rem;
     }
-}/* General Section Styling */
+}
 section {
     padding: 60px 0;
     text-align: center;
@@ -209,9 +209,8 @@ h2 {
     border-radius: 50%;
     margin-bottom: 20px;
     border: 3px solid #f4c40f;
-    object-fit: cover; /* Garante que as imagens fiquem bem ajustadas */
+    object-fit: cover; 
 }
-
 .testimonial-card p {
     font-size: 1rem;
     line-height: 1.6;
@@ -229,7 +228,7 @@ h2 {
 .swiper {
     margin-top: 30px;
     width: 100%;
-    max-width: 500px; /* Limite máximo de largura */
+    max-width: 500px; 
     margin-left: auto;
     margin-right: auto;
 }
@@ -339,7 +338,7 @@ h2 {
     width: 23%;
     text-align: center;
     color: #fff;
-    font-size: 1.2rem; /* Tamanho maior para o texto principal */
+    font-size: 1.2rem; 
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -349,23 +348,23 @@ h2 {
     text-align: center;
     color: #fff;
     width: 100%;
-    font-size: 2rem; /* Tamanho maior para o texto principal */
+    font-size: 1.8rem; 
     font-weight: bold;
     text-transform: uppercase;
-    letter-spacing: 1px; /* Aumento no espaçamento das letras */
-    text-shadow: 8px 8px 14px rgba(0, 0, 0, 0.5); /* Sombra para destacar o texto */
+    letter-spacing: 1px; 
+    text-shadow: 8px 8px 14px rgba(0, 0, 0, 0.5); 
     line-height: 1.2;
     
 
 }
 .row-medias svg{ 
-    width: 55px;
+    width: 42px;
     height: auto;
 }
 
 #instagram{
     color: plum;
-    width: 99px;
+    width: 90px;
 }
 
 #facebook{
@@ -379,7 +378,7 @@ h2 {
 }
 /* Footer */
 footer {
-    background: #111;
+    background: #000000;
     color: #fff;
     padding: 30px 0;
     text-align: center;
