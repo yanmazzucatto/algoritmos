@@ -84,6 +84,44 @@ header {
     background-position: center left;
     height: 60vh;
 }
+/* Texto principal da Hero Section */
+.hero-text {
+    text-align: center;
+    color: #fff;
+    font-size: 3rem; /* Tamanho maior para o texto principal */
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px; /* Aumento no espaçamento das letras */
+    position: relative;
+    z-index: 2;
+    text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5); /* Sombra para destacar o texto */
+    line-height: 1.2;
+    padding: 20px;
+}
+
+/* Subtexto da Hero Section */
+.hero-subtext {
+    font-size: 1.2rem; /* Tamanho ajustado */
+    font-weight: 300; /* Peso mais leve para o subtexto */
+    margin-top: 20px;
+    color: #f4c40f; /* Cor dourada para chamar atenção */
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3); /* Sombra suave para o subtexto */
+    line-height: 1.6;
+    max-width: 80%; /* Limite de largura para o texto */
+    margin: auto; /* Centraliza o texto */
+}
+
+/* Responsividade para telas pequenas */
+@media screen and (max-width: 768px) {
+    .hero-text {
+        font-size: 2.5rem; /* Ajuste no tamanho da fonte */
+    }
+
+    .hero-subtext {
+        font-size: 1rem; /* Ajuste no subtexto */
+        max-width: 90%; /* Aumenta a largura no mobile */
+    }
+}
 
 /* Responsividade para Header */
 @media screen and (max-width: 768px) {
