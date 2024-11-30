@@ -264,6 +264,7 @@ h2 {
     overflow: hidden;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     text-align: center;
+    height: 400px;
 }
 
 .service-card:hover {
