@@ -42,6 +42,7 @@ header {
 .logo img {
     height: 90px; /* Tamanho ajustado para melhor proporção */
     border-radius: 60px;
+    margin-top: -10px;
 }
 
 .nav-links {
