@@ -323,9 +323,12 @@ h2 {
 }
 /* social medias*/
 .row-medias{
-    display: flexbox;
-    flex-direction: row;
-    
+    display: flex; /* Ativa o layout flex */
+    justify-content: space-between; /* Distribui o conteúdo de maneira igual */
+    align-items: center; /* Alinha o conteúdo verticalmente no centro */
+    gap: 20px; /* Espaçamento entre os itens */
+    width: 100%; /* Ocupa 100% da largura do contêiner pai */
+    padding: 20px; /* Adiciona um pouco de preenchimento */
 }
 /* Footer */
 footer {
