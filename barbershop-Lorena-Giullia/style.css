@@ -79,11 +79,10 @@ header {
     color: #111;
 }
 .hero{
-    background-image: url('img/banner.jpg');
-    
+    background-image: url('img/bg-hero.jpg');
     background-repeat: repeat;
     background-position: center left;
-    height: 89vh;
+    height: 60vh;
 }
 
 /* Responsividade para Header */
