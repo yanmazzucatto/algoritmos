@@ -329,12 +329,15 @@ h2 {
     gap: 30px;
     margin-top: 30px;
 }
-.row-medias ul{
-    width: 100%;
-    flex-wrap: nowrap;
-}
-.row-medias li{
-    width: 20%;
+.row-medias a{
+    width: 23%;
+    text-align: center;
+    color: #fff;
+    font-size: 1.2rem; /* Tamanho maior para o texto principal */
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    
 }
 /* Footer */
 footer {
