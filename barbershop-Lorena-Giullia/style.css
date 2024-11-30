@@ -80,9 +80,10 @@ header {
 }
 .hero{
     background-image: url('img/banner.jpg');
-    object-fit: contain;
+    
     background-repeat: repeat;
     background-position: center left;
+    height: 89vh;
 }
 
 /* Responsividade para Header */
