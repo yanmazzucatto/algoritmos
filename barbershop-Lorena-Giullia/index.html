@@ -3,108 +3,107 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Barber Website</title>
+    <title>Barberian Man</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <!-- Header Section -->
     <header>
-        <div class="logo">
-            <img src="img/logotipo.jpeg" alt="Logo">
-            <h1>Chousen's Barber</h1>
+        <div class="container header-container">
+            <div class="logo">
+                <img src="img/logotipo.jpeg" alt="Logo">
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#news">News</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <a href="#" class="btn-appointment">Appointment</a>
         </div>
-        <nav>
-            <ul>
-                <li><a href="#about">Sobre Nós</a></li>
-                <li><a href="#services">Serviços</a></li>
-                <li><a href="#portfolio">Portfólio</a></li>
-                <li><a href="#contact">Contato</a></li>
-            </ul>
-        </nav>
-        <a href="#" class="btn">Agende seu Corte</a>
-        <div class="menu-toggle"><i class="fas fa-bars"></i></div>
     </header>
 
     <!-- Hero Section -->
     <section class="hero">
-        <h2>Bem-vindo à Chousen's Barber</h2>
-        <p>Tradição e modernidade em um só lugar</p>
-        <a href="#services" class="btn-primary">Descubra nossos serviços</a>
+        <div class="container hero-content">
+            <h1>Welcome To Barberian Man</h1>
+            <p>Our Barber Shop always offers professional quality and we are ready to deal with your highest expectations.</p>
+            <p>Our services are dedicated to your personal success. Let our barbers bring out the best in you!</p>
+        </div>
     </section>
 
     <!-- About Section -->
     <section id="about" class="about-section">
+        <div class="container about-container">
+            <h2>About Us</h2>
+            <p>At Barberian Man, we specialize in providing top-notch grooming services tailored for modern men.</p>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
         <div class="container">
-            <h2>Sobre nós</h2>
-            <div class="content">
-                <img src="img/CorteCabelo.jpg" alt="Barber">
-                <div>
-                    <p>Na Chousen's Barber, você encontra excelência em cortes de cabelo, barbas e cuidados masculinos. Com um time especializado, unimos tradição e inovação para oferecer uma experiência única.</p>
-                    <a href="#" class="btn-warning">Leia mais</a>
+            <div class="testimonial-content">
+                <p>"The best barber experience I've ever had. The professionalism and creativity of the team are unparalleled."</p>
+                <h4>- Charles Walker, Client</h4>
+            </div>
+            <img src="img/CorteCabelo.jpg" alt="Client">
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services-section">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <img src="img/Barbeando.jpg" alt="Trimming">
+                    <h3>Trimming</h3>
+                    <p>Professional skin care services that will help complete your look.</p>
+                </div>
+                <div class="service-card">
+                    <img src="img/CorteCabelo.jpg" alt="Hairstyle">
+                    <h3>Hairstyle</h3>
+                    <p>Our premium barber services ensure a clean and stylish haircut every time.</p>
+                </div>
+                <div class="service-card">
+                    <img src="img/Barbeando.jpg" alt="Shaving">
+                    <h3>Shaving</h3>
+                    <p>Experience a classic shave or an old-school style grooming session.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Services Section -->
-    <section id="services" class="courses-section">
-        <h2>Nossos Serviços</h2>
-        <div class="services-container">
-            <div class="card">
-                <i class="fas fa-cut"></i>
-                <h5>Corte de Cabelo</h5>
-                <p>Profissionalismo e estilo único - R$ 50,00</p>
-                <a href="#" class="btn-outline-dark">Agendar Corte</a>
-            </div>
-            <div class="card">
-                <i class="fas fa-beard"></i>
-                <h5>Barba Completa</h5>
-                <p>Design e acabamento à navalha - R$ 40,00</p>
-                <a href="#" class="btn-outline-dark">Agendar Barba</a>
-            </div>
-            <div class="card">
-                <i class="fas fa-spa"></i>
-                <h5>Hidratação Capilar</h5>
-                <p>Tratamento para fios saudáveis - R$ 30,00</p>
-                <a href="#" class="btn-outline-dark">Agendar Hidratação</a>
-            </div>
-            <div class="card">
-                <i class="fas fa-user"></i>
-                <h5>Sobrancelha Masculina</h5>
-                <p>Correção e design natural - R$ 20,00</p>
-                <a href="#" class="btn-outline-dark">Agendar Sobrancelha</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Portfolio Section -->
-    <section id="portfolio" class="portfolio-section">
-        <h2>Nosso Portfólio</h2>
-        <div class="portfolio-gallery">
-            <img src="img/Barbeando.jpg" alt="Portfolio">
-            <img src="img/CorteCabelo.jpg" alt="Portfolio">
-            <img src="img/Barbeando.jpg" alt="Portfolio">
-            <img src="img/CorteCabelo.jpg" alt="Portfolio">
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact-section">
-        <h2>Contato</h2>
-        <form>
-            <input type="text" placeholder="Nome">
-            <input type="email" placeholder="Email">
-            <input type="tel" placeholder="Telefone">
-            <button type="submit">Enviar</button>
-        </form>
-    </section>
-
-    <!-- Footer -->
+    <!-- Footer Section -->
     <footer>
-        <p>© 2024 Chousen's Barber | Todos os direitos reservados</p>
+        <div class="container footer-container">
+            <div class="footer-column">
+                <h4>Navigation</h4>
+                <ul>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Contact Us</h4>
+                <p>427 Ward Drive Suite 42L<br>New York, NY</p>
+                <p>Tel: (360) 442 8986</p>
+            </div>
+            <div class="footer-column">
+                <h4>Newsletter</h4>
+                <form>
+                    <input type="email" placeholder="Your Email">
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <p>© 2024 Barberian Man | All Rights Reserved</p>
     </footer>
-
-    <script src="script.js"></script>
 </body>
 </html>
