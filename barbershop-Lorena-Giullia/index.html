@@ -5,12 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Barber Website</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <!-- Header Section -->
     <header>
         <div class="logo">
             <img src="img/logotipo.jpeg" alt="Logo">
+            <h1>Chousen's Barber</h1>
         </div>
         <nav>
             <ul>
@@ -21,71 +23,88 @@
             </ul>
         </nav>
         <a href="#" class="btn">Agende seu Corte</a>
+        <div class="menu-toggle"><i class="fas fa-bars"></i></div>
     </header>
 
+    <!-- Hero Section -->
+    <section class="hero">
+        <h2>Bem-vindo à Chousen's Barber</h2>
+        <p>Tradição e modernidade em um só lugar</p>
+        <a href="#services" class="btn-primary">Descubra nossos serviços</a>
+    </section>
+
     <!-- About Section -->
-    <section id="about" class="about-section bg-dark">
+    <section id="about" class="about-section">
         <div class="container">
             <h2>Sobre nós</h2>
-            <div style="display: flex; gap: 20px;">
-                <div style="flex: 1;">
-                    <img src="img/CorteCabelo.jpg" alt="Barber">
-                </div>
-                <div style="flex: 1;">
-                    <p>Bem-vindo à Chousen Barber's, um espaço onde tradição e modernidade se encontram para oferecer o melhor cuidado masculino.</p>
-                    <a href="#" class="btn-warning">Read More</a>
+            <div class="content">
+                <img src="img/CorteCabelo.jpg" alt="Barber">
+                <div>
+                    <p>Na Chousen's Barber, você encontra excelência em cortes de cabelo, barbas e cuidados masculinos. Com um time especializado, unimos tradição e inovação para oferecer uma experiência única.</p>
+                    <a href="#" class="btn-warning">Leia mais</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Courses Section -->
-    <section id="services" class="courses-section bg-light text-center">
+    <!-- Services Section -->
+    <section id="services" class="courses-section">
         <h2>Nossos Serviços</h2>
-        <div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center;">
+        <div class="services-container">
             <div class="card">
+                <i class="fas fa-cut"></i>
                 <h5>Corte de Cabelo</h5>
-                <p>Corte profissional, adaptado ao seu estilo e personalidade - R$ 50,00</p>
+                <p>Profissionalismo e estilo único - R$ 50,00</p>
                 <a href="#" class="btn-outline-dark">Agendar Corte</a>
             </div>
             <div class="card">
+                <i class="fas fa-beard"></i>
                 <h5>Barba Completa</h5>
-                <p>Design e modelagem com acabamento à navalha - R$ 40,00</p>
-                <a href="#" class="btn-outline-dark">Agendar Corte</a>
+                <p>Design e acabamento à navalha - R$ 40,00</p>
+                <a href="#" class="btn-outline-dark">Agendar Barba</a>
             </div>
             <div class="card">
+                <i class="fas fa-spa"></i>
                 <h5>Hidratação Capilar</h5>
-                <p>Tratamento profundo para cabelos mais macios e saudáveis - R$ 30,00</p>
+                <p>Tratamento para fios saudáveis - R$ 30,00</p>
                 <a href="#" class="btn-outline-dark">Agendar Hidratação</a>
             </div>
             <div class="card">
+                <i class="fas fa-user"></i>
                 <h5>Sobrancelha Masculina</h5>
-                <p>Correção e design para uma aparência natural - R$ 20,00</p>
-                <a href="#" class="btn-outline-dark">Agendar Corte</a>
+                <p>Correção e design natural - R$ 20,00</p>
+                <a href="#" class="btn-outline-dark">Agendar Sobrancelha</a>
             </div>
         </div>
     </section>
 
     <!-- Portfolio Section -->
-    <section id="portfolio" class="portfolio-section bg-dark">
-        <h2 class="text-center">Portfólio</h2>
-        <div class="row">
-            <div class="col-md-3"><img src="img/Barbeando.jpg" alt="Portfolio"></div>
-            <div class="col-md-3"><img src="img/CorteCabelo.jpg" alt="Portfolio"></div>
-            <div class="col-md-3"><img src="img/Barbeando.jpg" alt="Portfolio"></div>
-            <div class="col-md-3"><img src="img/CorteCabelo.jpg" alt="Portfolio"></div>
+    <section id="portfolio" class="portfolio-section">
+        <h2>Nosso Portfólio</h2>
+        <div class="portfolio-gallery">
+            <img src="img/Barbeando.jpg" alt="Portfolio">
+            <img src="img/CorteCabelo.jpg" alt="Portfolio">
+            <img src="img/Barbeando.jpg" alt="Portfolio">
+            <img src="img/CorteCabelo.jpg" alt="Portfolio">
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="contact-section bg-light">
-        <h2 class="text-center">Get in Touch</h2>
+    <section id="contact" class="contact-section">
+        <h2>Contato</h2>
         <form>
-            <input type="text" placeholder="Name">
+            <input type="text" placeholder="Nome">
             <input type="email" placeholder="Email">
-            <input type="tel" placeholder="Phone">
-            <button type="submit">Submit</button>
+            <input type="tel" placeholder="Telefone">
+            <button type="submit">Enviar</button>
         </form>
     </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 Chousen's Barber | Todos os direitos reservados</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
