@@ -9,14 +9,22 @@
 <body>
     <!-- Header Section -->
     <header>
-        <img src="img/logotipo.jpeg" alt="Logo">
-        <h1>Chousen's Barber</h1>
-        <p>O melhor serviço da Cidade!</p>
+        <div class="logo">
+            <img src="img/logotipo.jpeg" alt="Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#about">Sobre Nós</a></li>
+                <li><a href="#services">Serviços</a></li>
+                <li><a href="#portfolio">Portfólio</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+        </nav>
         <a href="#" class="btn">Agende seu Corte</a>
     </header>
 
     <!-- About Section -->
-    <section class="about-section bg-dark">
+    <section id="about" class="about-section bg-dark">
         <div class="container">
             <h2>Sobre nós</h2>
             <div style="display: flex; gap: 20px;">
@@ -32,7 +40,7 @@
     </section>
 
     <!-- Courses Section -->
-    <section class="courses-section bg-light text-center">
+    <section id="services" class="courses-section bg-light text-center">
         <h2>Nossos Serviços</h2>
         <div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center;">
             <div class="card">
@@ -59,8 +67,8 @@
     </section>
 
     <!-- Portfolio Section -->
-    <section class="portfolio-section bg-dark">
-        <h2 class="text-center">Portfolio</h2>
+    <section id="portfolio" class="portfolio-section bg-dark">
+        <h2 class="text-center">Portfólio</h2>
         <div class="row">
             <div class="col-md-3"><img src="img/Barbeando.jpg" alt="Portfolio"></div>
             <div class="col-md-3"><img src="img/CorteCabelo.jpg" alt="Portfolio"></div>
@@ -70,7 +78,7 @@
     </section>
 
     <!-- Contact Section -->
-    <section class="contact-section bg-light">
+    <section id="contact" class="contact-section bg-light">
         <h2 class="text-center">Get in Touch</h2>
         <form>
             <input type="text" placeholder="Name">
