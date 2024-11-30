@@ -323,29 +323,11 @@ h2 {
 }
 /* social medias*/
 .row-medias{
-    display: flex; /* Ativa o layout flex */
-    justify-content: space-between; /* Distribui o conteúdo de maneira igual */
-    align-items: center; /* Alinha o conteúdo verticalmente no centro */
-    gap: 20px; /* Espaçamento entre os itens */
-    width: 100%; /* Ocupa 100% da largura do contêiner pai */
-    padding: 20px; /* Adiciona um pouco de preenchimento */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
 }
-.row-medias svg{
-        background: #f4f4f4;
-        padding: 20px;
-        border-radius: 8px;
-        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-        flex: 1; /* Garante que os itens tenham largura igual */
-        text-align: center;
-}
-    
-    /* Responsividade: Para telas menores */
-    @media screen and (max-width: 768px) {
-        .container {
-            flex-direction: column; /* Organiza os itens em coluna quando a tela for pequena */
-        }
-    }
-
 /* Footer */
 footer {
     background: #111;
