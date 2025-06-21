@@ -15,27 +15,31 @@ let agenda = [];
 
 function CriarAgenda(){
   const nome = prompt('Digite o nome: ');
+  const cidade = prompt('Digite sua cidade: ');
   const numeroCelular = Number(prompt('Digite o seu numero de celular: '));
-  /*const numeroTelefone = Number(prompt('Digite o seu numero de Telefone: '));
+  const numeroTelefone = Number(prompt('Digite o seu numero de Telefone: '));
   const cep = Number(prompt('Digite o seu CEP: '));
   const numeroCasa = Number(prompt('Digite o numero da sua casa: '));
-  const cidade = prompt('Digite sua cidade: ');
   const email = prompt('Digite o seu email: ');
-*/
+
   contato = {
     nome,
-    numeroCelular,
-   /* numeroTelefone,
+    cidade,
+    numeroTelefone,
     cep,
     numeroCasa,
-    cidade,
-    email*/
+    numeroCelular ,
+    email  
   }
   agenda.push(contato); 
   console.log(contato)
 }
+
+
 CriarAgenda();
 main();
+
+
 function main(){
     let resposta = prompt('quer criar mais uma agenda? (s/n)');
     if (resposta === "s"){
@@ -45,5 +49,13 @@ function main(){
     let nResposta = prompt("Digite a posicao da agenda que deseja ver: ")
     console.log(agenda[nResposta]);
     }
+
+    let pesquisa = prompt('busque cidade: ');
+    let result = agenda.filter((contato) => contato.cidade === pesquisa)
+    console.log(result)
+
+    let busca = prompt("Digite um nome que deseja pesquisar na lista : ");
+    let resultNome = agenda.find(contato => contato.nome === busca );
+    console.log(resultNome);
 
 }
