@@ -10,6 +10,8 @@ scanf("%i", &a);
 resultado = 0;
 printf("\nDigite o primeiro numero:  ");
 scanf("%i", &b);
+
+
 for (int j = 0; j != b; j++){
     resultado = a+resultado;
     }
