@@ -8,7 +8,7 @@ int a, b, resultado;
 printf("Digite o primeiro numero:  ");
 scanf("%i", &a);
 resultado = 0;
-printf("\nDigite o primeiro numero:  ");
+printf("\nDigite o segundo numero:  ");
 scanf("%i", &b);
 
 
