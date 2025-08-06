@@ -19,7 +19,7 @@ int* preencher(int n ){
     return v;
 }
 
-void encontrarMaiores(int *v, int n){
+int* encontrarMaiores(int *v, int n){
 
     for (int i = 0; i < n; i++)
     {
