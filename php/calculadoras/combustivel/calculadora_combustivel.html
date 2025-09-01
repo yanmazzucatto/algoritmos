@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Combustível</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 500px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input[type="number"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        button {
+            width: 100%;
+            padding: 12px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        .error {
+            color: red;
+            font-size: 14px;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1> Calculadora de Combustível</h1>
+        <form id="combustivelForm" method="POST" action="../combustivel/calculadora_combustivel.php">
+            <div class="form-group">
+                <label for="alcool">Preço do Álcool (R$ por litro):</label>
+                <input type="number" id="alcool" name="alcool" step="0.01" placeholder="Ex: 3.50">
+                <div id="errorAlcool" class="error"></div>
+            </div>
+            
+            <div class="form-group">
+                <label for="gasolina">Preço da Gasolina (R$ por litro):</label>
+                <input type="number" id="gasolina" name="gasolina" step="0.01" placeholder="Ex: 5.20">
+                <div id="errorGasolina" class="error"></div>
+            </div>
+            
+            <button type="submit">Calcular Melhor Opção</button>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById('combustivelForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const alcool = document.getElementById('alcool').value;
+            const gasolina = document.getElementById('gasolina').value;
+            
+            // Limpar mensagens de erro
+            document.getElementById('errorAlcool').textContent = '';
+            document.getElementById('errorGasolina').textContent = '';
+            
+            let isValid = true;
+            
+            // Validar preço do álcool
+            if (!alcool || isNaN(alcool) || parseFloat(alcool) <= 0) {
+                document.getElementById('errorAlcool').textContent = 'Por favor, insira um valor numérico válido para o álcool.';
+                isValid = false;
+            }
+            
+            // Validar preço da gasolina
+            if (!gasolina || isNaN(gasolina) || parseFloat(gasolina) <= 0) {
+                document.getElementById('errorGasolina').textContent = 'Por favor, insira um valor numérico válido para a gasolina.';
+                isValid = false;
+            }
+            
+            // Se válido, enviar formulário
+            if (isValid) {
+                this.submit();
+            }
+        });
+    </script>
+</body>
+</html>
