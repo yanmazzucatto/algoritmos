@@ -68,7 +68,7 @@
 </head>
 <body>
     <div class="container">
-        <h1>📚 Resultado da Avaliação</h1>
+        <h1> Resultado da Avaliação</h1>
         
         <?php
         if ($_SERVER['REQUEST_METHOD'] == 'POST') {
