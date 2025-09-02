@@ -90,22 +90,22 @@
                 if ($media >= 6 && $frequencia >= 75) {
                     $situacao = "APROVADO";
                     $classe = "aprovado";
-                    $emoji = "🎉";
+                    $emoji = "";
                     $mensagem = "Parabéns! Você foi aprovado!";
                 } elseif ($media >= 6 && $frequencia < 75) {
                     $situacao = "REPROVADO POR FREQUÊNCIA";
                     $classe = "reprovado";
-                    $emoji = "📅";
+                    $emoji = "";
                     $mensagem = "Reprovado por frequência insuficiente.";
                 } elseif ($media < 6 && $frequencia >= 75) {
                     $situacao = "REPROVADO POR NOTA";
                     $classe = "reprovado";
-                    $emoji = "📝";
+                    $emoji = "";
                     $mensagem = "Reprovado por média insuficiente.";
                 } else {
                     $situacao = "REPROVADO POR NOTA E FREQUÊNCIA";
                     $classe = "reprovado";
-                    $emoji = "❌";
+                    $emoji = "";
                     $mensagem = "Reprovado por nota e frequência insuficientes.";
                 }
                 
